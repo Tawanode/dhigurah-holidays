@@ -1,0 +1,375 @@
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+@theme {
+  --color-primary: #12343B;
+  --color-primary-container: #1b4952;
+  --color-secondary: #236653;
+  --color-secondary-container: #a4f2d6;
+  --color-tertiary: #6CAFC4;
+  --color-ocean: #6CAFC4;
+  --color-lagoon: #6CAFC4;
+  --color-forest: #236653;
+  --color-sand: #F5F0E7;
+  --color-warm-white: #FCFBF8;
+  --color-ivory: #FCFBF8;
+  --color-surface: #FCFBF8;
+  --color-surface-dim: #ede7dc;
+  --color-surface-container: #F5F0E7;
+  --color-surface-container-low: #faf7f2;
+  --color-surface-container-high: #eae3d6;
+  --color-surface-container-lowest: #ffffff;
+  --color-charcoal: #242B2A;
+  --color-on-surface: #242B2A;
+  --color-on-surface-variant: #6F7773;
+  --color-outline: #6F7773;
+  --color-outline-variant: #E5E2DA;
+  --color-border: #E5E2DA;
+  --color-muted-grey: #6F7773;
+  --font-serif: var(--font-playfair), "Playfair Display", Georgia, serif;
+  --font-sans: var(--font-manrope), "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+:root {
+  --font-playfair: 'Playfair Display', Georgia, serif;
+  --font-manrope: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-navy: #12343B;
+  --color-forest: #236653;
+  --color-sand: #F5F0E7;
+  --color-warm-white: #FCFBF8;
+  --color-charcoal: #242B2A;
+  --color-muted: #6F7773;
+  --color-border: #E5E2DA;
+  --color-ocean: #6CAFC4;
+}
+
+body {
+  background-color: #FCFBF8;
+  color: #242B2A;
+  font-family: var(--font-manrope), 'Manrope', sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1, h2, h3, .font-serif, .font-editorial {
+  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  letter-spacing: -0.015em;
+}
+
+/* Fluid responsive typography helpers */
+.text-hero-fluid {
+  font-size: clamp(2.25rem, 5vw + 1rem, 4.875rem);
+  line-height: 1.05;
+}
+
+.text-page-title-fluid {
+  font-size: clamp(2rem, 3.5vw + 0.8rem, 3.75rem);
+  line-height: 1.1;
+}
+
+.text-section-fluid {
+  font-size: clamp(1.75rem, 2.4vw + 0.6rem, 2.85rem);
+  line-height: 1.14;
+}
+
+.text-card-fluid {
+  font-size: clamp(1.25rem, 1.2vw + 0.8rem, 1.625rem);
+  line-height: 1.25;
+}
+
+/* Reading container for editorial paragraphs */
+.max-w-editorial {
+  max-width: 65ch;
+}
+
+/* Editorial Polaroid & Passe-Partout Framing */
+.passe-partout {
+  box-shadow: 0 20px 40px -15px rgba(16, 61, 53, 0.08);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.passe-partout:hover {
+  box-shadow: 0 28px 56px -16px rgba(16, 61, 53, 0.14);
+}
+
+.tilt-left {
+  transform: rotate(-1.2deg);
+}
+
+.tilt-left:hover {
+  transform: rotate(0deg) scale(1.015);
+}
+
+.tilt-right {
+  transform: rotate(1.1deg);
+}
+
+.tilt-right:hover {
+  transform: rotate(0deg) scale(1.015);
+}
+
+.editorial-shadow {
+  box-shadow: 0 24px 48px -18px rgba(16, 61, 53, 0.09);
+}
+
+/* Material Symbols Icon Tweaks */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+/* Hide scrollbar for category pills */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom View Transitions for Butter-Smooth Page Hopping */
+header {
+  view-transition-name: site-header;
+}
+
+main {
+  view-transition-name: main-content;
+}
+
+::view-transition-group(site-header) {
+  animation: none;
+  z-index: 50;
+}
+
+::view-transition-old(main-content) {
+  animation: 0.24s cubic-bezier(0.4, 0, 0.2, 1) both fadeOutPage;
+}
+
+::view-transition-new(main-content) {
+  animation: 0.34s cubic-bezier(0.16, 1, 0.3, 1) both fadeInPage;
+}
+
+@keyframes fadeOutPage {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes fadeInPage {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(main-content),
+  ::view-transition-new(main-content) {
+    animation: none;
+  }
+}
+
+/* ========================================================= */
+/* PREMIUM EDITORIAL MOTION UTILITIES                        */
+/* ========================================================= */
+
+/* Nav link hover underline animation */
+.nav-link-indicator {
+  position: relative;
+}
+.nav-link-indicator::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 1.5px;
+  background-color: #103D35;
+  transition: width 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.nav-link-indicator:hover::after {
+  width: 100%;
+}
+
+/* Tactile button micro-interaction */
+.btn-tactile {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+.btn-tactile:hover {
+  transform: translateY(-1.5px);
+}
+.btn-tactile:active {
+  transform: translateY(0.5px) scale(0.985);
+}
+
+/* Editorial card subtle hover lift */
+.card-hover-lift {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease, border-color 0.3s ease;
+}
+.card-hover-lift:hover {
+  transform: translateY(-3px);
+}
+
+/* Hero Entrance Animations */
+@keyframes heroEntranceFadeUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes heroImageReveal {
+  0% {
+    opacity: 0;
+    transform: scale(1.06);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-hero-text-1 {
+  animation: heroEntranceFadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.15s backwards;
+}
+.animate-hero-text-2 {
+  animation: heroEntranceFadeUp 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.28s backwards;
+}
+.animate-hero-text-3 {
+  animation: heroEntranceFadeUp 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.42s backwards;
+}
+.animate-hero-cta {
+  animation: heroEntranceFadeUp 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.55s backwards;
+}
+.animate-hero-bg {
+  animation: heroImageReveal 1.2s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-text-1,
+  .animate-hero-text-2,
+  .animate-hero-text-3,
+  .animate-hero-cta,
+  .animate-hero-bg,
+  .btn-tactile,
+  .card-hover-lift {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+/* Custom modal slim scrollbar */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(16, 61, 53, 0.22) transparent;
+}
+.scrollbar-thin::-webkit-scrollbar {
+  width: 5px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgba(16, 61, 53, 0.18);
+  border-radius: 9999px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(16, 61, 53, 0.38);
+}
+
+/* ========================================================= */
+/* BOOKING MODAL LUXURY SMOOTH ENTRANCE & EXIT ANIMATIONS    */
+/* ========================================================= */
+
+@keyframes bookingBackdropIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bookingBackdropOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bookingCardIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.92) translateY(24px);
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes bookingCardOut {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.94) translateY(14px);
+  }
+}
+
+.booking-backdrop-in {
+  animation: bookingBackdropIn 0.36s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: opacity;
+}
+
+.booking-backdrop-out {
+  animation: bookingBackdropOut 0.24s cubic-bezier(0.4, 0, 1, 1) forwards;
+  will-change: opacity;
+}
+
+.booking-card-in {
+  animation: bookingCardIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, opacity;
+  transform-origin: center center;
+}
+
+.booking-card-out {
+  animation: bookingCardOut 0.24s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  will-change: transform, opacity;
+  transform-origin: center center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .booking-backdrop-in,
+  .booking-backdrop-out,
+  .booking-card-in,
+  .booking-card-out {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+

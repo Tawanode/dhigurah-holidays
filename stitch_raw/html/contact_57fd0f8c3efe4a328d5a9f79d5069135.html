@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact &amp; Inquiries — Dhigurah Holidays, Maldives</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Editorial Typography Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Forms and Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary": "#ffffff",
+            "on-secondary-fixed-variant": "#00513f",
+            "surface": "#f6fbf4",
+            "surface-dim": "#d7dbd5",
+            "tertiary-fixed-dim": "#8ecff0",
+            "surface-variant": "#dfe4dd",
+            "on-secondary-fixed": "#002117",
+            "on-primary-container": "#7ca89d",
+            "on-tertiary-container": "#66a7c6",
+            "inverse-primary": "#a3d0c4",
+            "on-tertiary-fixed": "#001f2b",
+            "on-error": "#ffffff",
+            "surface-container-low": "#f0f5ee",
+            "on-tertiary-fixed-variant": "#004d65",
+            "background": "#f6fbf4",
+            "inverse-on-surface": "#eef2eb",
+            "surface-container-lowest": "#ffffff",
+            "primary": "#002620",
+            "on-primary-fixed-variant": "#234e45",
+            "tertiary-fixed": "#bfe8ff",
+            "surface-bright": "#f6fbf4",
+            "outline-variant": "#c0c8c5",
+            "surface-container-high": "#e5e9e3",
+            "secondary-container": "#a4f2d6",
+            "outline": "#717976",
+            "secondary-fixed": "#a4f2d6",
+            "error": "#ba1a1a",
+            "secondary-fixed-dim": "#89d5ba",
+            "primary-container": "#103d35",
+            "on-error-container": "#93000a",
+            "error-container": "#ffdad6",
+            "on-surface-variant": "#404846",
+            "surface-container": "#ebefe9",
+            "surface-container-highest": "#dfe4dd",
+            "surface-tint": "#3c665d",
+            "on-tertiary": "#ffffff",
+            "on-secondary-container": "#1f715a",
+            "on-background": "#181d19",
+            "on-primary-fixed": "#00201b",
+            "primary-fixed-dim": "#a3d0c4",
+            "tertiary-container": "#003b4f",
+            "primary-fixed": "#bfece0",
+            "tertiary": "#002432",
+            "secondary": "#166b55",
+            "inverse-surface": "#2d322d",
+            "on-primary": "#ffffff",
+            "on-surface": "#181d19"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.375rem",
+            "margin": "4rem",
+            "margin-mobile": "1.25rem",
+            "space-sm": "0.75rem",
+            "space-xl": "3.5rem",
+            "space-md": "1.25rem",
+            "gutter": "2rem",
+            "space-3xl": "8rem",
+            "space-2xl": "5.5rem",
+            "gutter-mobile": "1rem",
+            "space-lg": "2.25rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "display-lg-mobile": ["Playfair Display"],
+            "body-sm": ["Manrope"],
+            "headline-sm": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "label-md": ["Manrope"],
+            "display-md-mobile": ["Playfair Display"],
+            "body-lg": ["Manrope"],
+            "display-lg": ["Playfair Display"],
+            "title-editorial": ["Playfair Display"],
+            "body-md": ["Manrope"],
+            "label-lg": ["Manrope"],
+            "label-caption": ["Manrope"],
+            "display-md": ["Playfair Display"]
+          },
+          "fontSize": {
+            "headline-lg": ["2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-md": ["1.875rem", { "lineHeight": "2.375rem", "fontWeight": "500" }],
+            "display-lg-mobile": ["2.75rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }],
+            "headline-sm": ["1.375rem", { "lineHeight": "1.875rem", "fontWeight": "600" }],
+            "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "500" }],
+            "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "display-md-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.875rem", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "display-lg": ["4.5rem", { "lineHeight": "5rem", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "title-editorial": ["1.5rem", { "lineHeight": "2.25rem", "fontWeight": "400" }],
+            "body-md": ["1rem", { "lineHeight": "1.625rem", "fontWeight": "400" }],
+            "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "label-caption": ["0.6875rem", { "lineHeight": "0.9375rem", "letterSpacing": "0.05em", "fontWeight": "500" }],
+            "display-md": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.015em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-container selection:text-primary font-body-md">
+<!-- TOP EDITORIAL HEADER (Derived directly from Shared Components JSON) -->
+<header class="sticky top-0 z-50 bg-surface-container-lowest/90 dark:bg-primary-container/90 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin py-4 md:py-6 max-w-7xl mx-auto">
+<!-- Brand Logo Wordmark -->
+<a class="text-headline-sm font-headline-sm font-semibold tracking-wider text-primary dark:text-inverse-primary focus:outline-none focus-visible:ring-1 focus-visible:ring-primary" href="#">
+        DHIGURAH HOLIDAYS
+      </a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant dark:text-outline-variant transition-colors duration-200 text-label-md font-label-md uppercase tracking-widest hover:text-primary dark:hover:text-inverse-primary" href="#rooms">Rooms</a>
+<a class="text-on-surface-variant dark:text-outline-variant transition-colors duration-200 text-label-md font-label-md uppercase tracking-widest hover:text-primary dark:hover:text-inverse-primary" href="#experiences">Experiences</a>
+<a class="text-on-surface-variant dark:text-outline-variant transition-colors duration-200 text-label-md font-label-md uppercase tracking-widest hover:text-primary dark:hover:text-inverse-primary" href="#gallery">Gallery</a>
+<a class="text-on-surface-variant dark:text-outline-variant transition-colors duration-200 text-label-md font-label-md uppercase tracking-widest hover:text-primary dark:hover:text-inverse-primary" href="#about">About</a>
+<!-- Active link: Contact -->
+<a class="text-primary dark:text-inverse-primary border-b border-primary dark:border-inverse-primary pb-1 font-semibold text-label-md font-label-md uppercase tracking-widest" href="#contact">Contact</a>
+</nav>
+<!-- Primary Action -->
+<div class="flex items-center space-x-4">
+<a class="inline-block bg-primary-container text-surface-container-lowest hover:bg-secondary transition-colors duration-200 px-6 py-3 rounded-none text-label-lg font-label-lg uppercase tracking-wider" href="#inquiry-form">
+          MAKE AN INQUIRY
+        </a>
+</div>
+</div>
+</header>
+<main class="min-h-screen">
+<!-- 1. HERO SECTION -->
+<section class="relative pt-space-xl md:pt-space-2xl pb-space-lg md:pb-space-xl overflow-hidden">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end">
+<!-- Typography Column -->
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2">
+<span class="w-6 h-[1px] bg-secondary"></span>
+<span class="text-label-caption font-label-caption text-secondary uppercase tracking-widest font-semibold">RESERVATIONS &amp; DIRECT INQUIRIES</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight">
+              Let's Talk About Your Island Stay
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+              Planning a visit to Dhigurah? Share your preferred dates and any questions you have. Get in touch to ask about accommodation, facilities, and local experiences.
+            </p>
+<div class="pt-2 flex flex-wrap gap-4 text-label-md font-label-md uppercase tracking-wider text-outline">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span> Verified Direct Channel</span>
+<span class="text-outline-variant">•</span>
+<span>South Ari Atoll Biosphere</span>
+<span class="text-outline-variant">•</span>
+<span>Local Island Hospitality</span>
+</div>
+</div>
+<!-- Editorial Framed Island Snapshot -->
+<div class="lg:col-span-5 relative mt-6 lg:mt-0">
+<div class="p-3 md:p-4 bg-surface-container-lowest border border-outline-variant/40 shadow-[0_20px_40px_-15px_rgba(16,61,53,0.08)] transform md:rotate-1 transition-transform duration-500 hover:rotate-0">
+<div class="overflow-hidden aspect-[4/3] relative">
+<img class="w-full h-full object-cover" data-alt="An editorial wide capture of Dhigurah island sandbank meeting pristine aquamarine Indian Ocean waters under soft morning sunlight, fine white sand dunes, lush green coconut palm canopy in the distance, peaceful Maldivian maritime atmosphere, fine art photography style with warm sand and turquoise color grading." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAdrRw0uuQNkvfOm2TKW40lT2p7T9alCGADWz6z6M9wgL9UW0Qb8d0FxjTxeqUW6TsahRO7Le295-7ASjHKLcdGPtqWAz_ah5jvWLTLLZJVVrYD4MWKAi83367ya6lBdRDjWDRLegTKZBLAU0G4Fz6K5Vbgzm9lJyE4PMSf3TdlOvbBLqz2e677FV6aceCULRb-zuPPkb3aZRry8oY-wOGcrR_jajMjVbHJRXT5pX7796BbokOzafk"/>
+</div>
+<div class="pt-3 pb-1 flex justify-between items-center text-label-caption font-label-caption text-on-surface-variant">
+<span>KALUHOH KOARU HINGUN</span>
+<span>03°36'54" N / 72°55'42" E</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION SEPARATION DIVIDER -->
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="border-t border-outline-variant/30"></div>
+</div>
+<!-- 2. TWO-COLUMN EDITORIAL CONTACT & INQUIRY SECTION -->
+<section class="py-space-xl md:py-space-2xl" id="contact">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- LEFT COLUMN: Verified Property & Island Details (Spans 5 cols) -->
+<div class="lg:col-span-5 space-y-10">
+<div>
+<span class="text-label-caption font-label-caption text-secondary uppercase tracking-widest font-semibold block mb-2">LOCAL ANCHORAGE</span>
+<h2 class="font-headline-md text-headline-md text-primary">Island Location &amp; Reach</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">
+                Nestled on the slender southern tip of South Ari Atoll, Dhigurah is celebrated for its natural sandbank and direct proximity to year-round whale shark feeding grounds.
+              </p>
+</div>
+<!-- Details Block Card -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 p-6 md:p-8 space-y-6">
+<!-- Property Name & Atoll -->
+<div class="border-b border-outline-variant/30 pb-5">
+<span class="text-label-caption font-label-caption text-outline uppercase tracking-wider block">PROPERTY IDENTIFIER</span>
+<span class="text-headline-sm font-headline-sm text-primary mt-1 block">Dhigurah Holidays</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Registered Boutique Island Guesthouse</span>
+</div>
+<!-- Island Location -->
+<div class="border-b border-outline-variant/30 pb-5 space-y-1">
+<span class="text-label-caption font-label-caption text-outline uppercase tracking-wider block">OFFICIAL ADDRESS</span>
+<p class="text-body-md font-body-md text-primary font-medium">
+                  Kaluhoh koaru hingun, Dhigurah 00070
+                </p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+                  South Ari Atoll, Republic of Maldives
+                </p>
+</div>
+<!-- Verified Telephone -->
+<div class="border-b border-outline-variant/30 pb-5 space-y-1">
+<span class="text-label-caption font-label-caption text-outline uppercase tracking-wider block">VERIFIED DIRECT TELEPHONE</span>
+<a class="text-headline-sm font-headline-sm text-primary hover:text-secondary transition-colors inline-flex items-center gap-2" href="tel:+9607774749">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">phone_in_talk</span>
+                  +960 777-4749
+                </a>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+                  Available daily 08:00 – 21:00 (Maldives Local Time, UTC+5)
+                </p>
+</div>
+<!-- Arrival & Transfer Guidance -->
+<div class="space-y-3">
+<span class="text-label-caption font-label-caption text-outline uppercase tracking-wider block">ARRIVAL &amp; TRANSFER GUIDANCE</span>
+<div class="p-4 bg-surface-container-low border-l-2 border-primary space-y-2">
+<h4 class="font-label-lg text-label-lg text-primary uppercase">Domestic Flight + Speedboat</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    A scenic 20-minute domestic flight from Velana International Airport (MLE) to Maamigili Airport (VAM), followed by our dedicated 20-minute guesthouse speedboat transfer across the lagoon directly to Dhigurah jetty.
+                  </p>
+</div>
+<div class="p-4 bg-surface-container-low border-l-2 border-secondary space-y-2">
+<h4 class="font-label-lg text-label-lg text-primary uppercase">Direct Scheduled Speedboat</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    Direct sea transfers departing daily from Malé harbor straight to Dhigurah (approx. 1 hour 45 minutes, weather permitting). We manage ticket bookings on your behalf.
+                  </p>
+</div>
+</div>
+<!-- Direct Communication Note -->
+<div class="pt-2">
+<div class="flex items-start gap-3 text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary shrink-0">handshake</span>
+<span><strong>Direct Communication Guarantee:</strong> All reservations and excursion inquiries are received and managed personally by our on-island hosts without intermediary service fees.</span>
+</div>
+</div>
+</div>
+<!-- Interactive Map & Visual Directions Card -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 p-4 relative group">
+<div class="overflow-hidden aspect-[16/9] relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An artistic high-angle cartographic aerial photograph of the elongated island of Dhigurah surrounded by turquoise reef rings, turquoise shallows, and deep navy Indian Ocean ocean drop-offs, showcasing the sand spit and village harbor with clean minimalist cartography lines, warm light editorial luxury travel guide aesthetic." data-location="Dhigurah, Maldives" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzdocncUBtFwRP_Hu_qiKPK0G32D5LMTY5xLDxSjmHagC2noB4TIJKPEHWa4u-5wDeMqUE7rBoQ_q9dLnsxXTF_cEhqXBHRLjow1gcn037SCoHZAliie1rPcgIRbmE0WLGvyAk68ngetFHFOqkQY7556xunpdbOB0otNfDxCjADcneohhDUAFWbPqEmLy8sh39BGX57OM7HKZSkblHEx3YnjLojNALoqx7NTm-I0vAwYIGEM5Sjc0U"/>
+<div class="absolute inset-0 bg-primary/20 pointer-events-none"></div>
+<!-- Pin marker -->
+<div class="absolute top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 bg-surface-container-lowest px-3 py-1.5 shadow-md flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="text-label-caption font-label-caption uppercase tracking-wider text-primary font-bold">Dhigurah Holidays</span>
+</div>
+</div>
+<div class="p-4 flex items-center justify-between">
+<div>
+<div class="text-label-md font-label-md uppercase tracking-wider text-primary">South Ari Atoll Marine Protected Area</div>
+<div class="text-body-sm font-body-sm text-outline">SAMPA Zone — Whale Shark Sanctuary</div>
+</div>
+<a class="text-label-md font-label-md uppercase tracking-widest text-primary hover:text-secondary inline-flex items-center gap-1 border-b border-primary pb-0.5" href="https://maps.google.com/?q=Dhigurah+Holidays+Maldives" rel="noopener noreferrer" target="_blank">
+                  MAP VIEW <span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Elegant Editorial Inquiry Form (Spans 7 cols) -->
+<div class="lg:col-span-7 lg:pl-6" id="inquiry-form">
+<div class="bg-surface-container-lowest border border-outline-variant/40 p-8 md:p-12 shadow-[0_20px_40px_-15px_rgba(16,61,53,0.05)]">
+<div class="mb-8">
+<span class="text-label-caption font-label-caption text-secondary uppercase tracking-widest font-semibold block mb-2">CURATED STAY INQUIRY</span>
+<h3 class="font-headline-md text-headline-md text-primary">Request Stay Details &amp; Rates</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+                  Complete the fields below with your timeline and group preferences. Our island hosts will respond within 24 hours with exact availability, room tiers, and tailored transfer coordination.
+                </p>
+</div>
+<form action="#" class="space-y-8" method="POST" onsubmit="event.preventDefault(); document.getElementById('form-feedback').classList.remove('hidden');">
+<!-- Row 1: Name and Email -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Full Name -->
+<div class="space-y-1">
+<label class="block text-label-caption font-label-caption text-outline uppercase tracking-wider" for="full-name">
+                      FULL NAME <span class="text-secondary">*</span>
+</label>
+<input class="w-full bg-surface-container-low border-0 border-b border-outline focus:border-b-[1.5px] focus:border-primary focus:ring-0 text-on-surface px-0 py-3 text-body-md placeholder:text-outline-variant" id="full-name" name="full-name" placeholder="e.g. Eleanor Vance" required="" type="text"/>
+</div>
+<!-- Email Address -->
+<div class="space-y-1">
+<label class="block text-label-caption font-label-caption text-outline uppercase tracking-wider" for="email-address">
+                      EMAIL ADDRESS <span class="text-secondary">*</span>
+</label>
+<input class="w-full bg-surface-container-low border-0 border-b border-outline focus:border-b-[1.5px] focus:border-primary focus:ring-0 text-on-surface px-0 py-3 text-body-md placeholder:text-outline-variant" id="email-address" name="email-address" placeholder="name@domain.com" required="" type="email"/>
+</div>
+</div>
+<!-- Row 2: Phone Number & Inquiry Topic -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Phone Number (Optional) -->
+<div class="space-y-1">
+<label class="block text-label-caption font-label-caption text-outline uppercase tracking-wider" for="phone-number">
+                      PHONE NUMBER (OPTIONAL)
+                    </label>
+<input class="w-full bg-surface-container-low border-0 border-b border-outline focus:border-b-[1.5px] focus:border-primary focus:ring-0 text-on-surface px-0 py-3 text-body-md placeholder:text-outline-variant" id="phone-number" name="phone-number" placeholder="+1 (555) 019-2834" type="tel"/>
+</div>
+<!-- Inquiry Topic Selector -->
+<div class="space-y-1">
+<label class="block text-label-caption font-label-caption text-outline uppercase tracking-wider" for="inquiry-topic">
+                      PRIMARY INQUIRY TOPIC <span class="text-secondary">*</span>
+</label>
+<select class="w-full bg-surface-container-low border-0 border-b border-outline focus:border-b-[1.5px] focus:border-primary focus:ring-0 text-on-surface px-0 py-3 text-body-md" id="inquiry-topic" name="inquiry-topic" required="">
+<option value="Accommodation">Accommodation &amp; Room Suites</option>
+<option value="Ocean Excursions">Ocean Excursions &amp; Whale Shark Safaris</option>
+<option value="Island Transfers">Island Transfers &amp; Domestic Flights</option>
+<option value="General Inquiries">General Inquiries &amp; Island Lifestyle</option>
+</select>
+</div>
+</div>
+<!-- Row 3: Preferred Dates -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Preferred Arrival Date -->
+<div class="space-y-1">
+<label class="block text-label-caption font-label-caption text-outline uppercase tracking-wider" for="arrival-date">
+                      PREFERRED ARRIVAL DATE <span class="text-secondary">*</span>
+</label>
+<input class="w-full bg-surface-container-low border-0 border-b border-outline focus:border-b-[1.5px] focus:border-primary focus:ring-0 text-on-surface px-0 py-3 text-body-md" id="arrival-date" name="arrival-date" required="" type="date"/>
+</div>
+<!-- Preferred Departure Date -->
+<div class="space-y-1">
+<label class="block text-label-caption font-label-caption text-outline uppercase tracking-wider" for="departure-date">
+                      PREFERRED DEPARTURE DATE <span class="text-secondary">*</span>
+</label>
+<input class="w-full bg-surface-container-low border-0 border-b border-outline focus:border-b-[1.5px] focus:border-primary focus:ring-0 text-on-surface px-0 py-3 text-body-md" id="departure-date" name="departure-date" required="" type="date"/>
+</div>
+</div>
+<!-- Row 4: Guest Counter Selector -->
+<div class="space-y-2">
+<label class="block text-label-caption font-label-caption text-outline uppercase tracking-wider">
+                    PARTY SIZE &amp; GUESTS
+                  </label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+<!-- Adults Selector -->
+<div class="flex items-center justify-between p-3 bg-surface-container border border-outline-variant/50">
+<div>
+<div class="text-label-md font-label-md uppercase text-primary">Adults</div>
+<div class="text-label-caption font-label-caption text-outline">Age 12 and above</div>
+</div>
+<div class="flex items-center space-x-3">
+<button class="w-8 h-8 flex items-center justify-center border border-outline text-primary hover:bg-surface-variant transition-colors" onclick="decrementGuest('adults')" type="button">−</button>
+<span class="font-body-md font-semibold text-primary w-4 text-center" id="adults-count">2</span>
+<button class="w-8 h-8 flex items-center justify-center border border-outline text-primary hover:bg-surface-variant transition-colors" onclick="incrementGuest('adults')" type="button">+</button>
+</div>
+</div>
+<!-- Children Selector -->
+<div class="flex items-center justify-between p-3 bg-surface-container border border-outline-variant/50">
+<div>
+<div class="text-label-md font-label-md uppercase text-primary">Children</div>
+<div class="text-label-caption font-label-caption text-outline">Under 12 years</div>
+</div>
+<div class="flex items-center space-x-3">
+<button class="w-8 h-8 flex items-center justify-center border border-outline text-primary hover:bg-surface-variant transition-colors" onclick="decrementGuest('children')" type="button">−</button>
+<span class="font-body-md font-semibold text-primary w-4 text-center" id="children-count">0</span>
+<button class="w-8 h-8 flex items-center justify-center border border-outline text-primary hover:bg-surface-variant transition-colors" onclick="incrementGuest('children')" type="button">+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Row 5: Message -->
+<div class="space-y-1">
+<label class="block text-label-caption font-label-caption text-outline uppercase tracking-wider" for="message">
+                    SPECIAL REQUESTS &amp; INQUIRY NOTES
+                  </label>
+<textarea class="w-full bg-surface-container-low border-0 border-b border-outline focus:border-b-[1.5px] focus:border-primary focus:ring-0 text-on-surface px-0 py-3 text-body-md placeholder:text-outline-variant" id="message" name="message" placeholder="Tell us about your flight timings, dietary considerations, scuba diving ambitions, or any questions regarding transfer schedules..." rows="4"></textarea>
+</div>
+<!-- Form Notice -->
+<div class="p-4 bg-surface-container-low border border-outline-variant/30 flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary shrink-0 text-lg mt-0.5">info</span>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                    Inquiry submission only — room rates, availability, and transfer options will be confirmed directly by the guesthouse team. No upfront payment required.
+                  </p>
+</div>
+<!-- Feedback message (hidden by default) -->
+<div class="hidden p-4 bg-secondary-container text-on-secondary-container text-body-sm font-body-sm border border-secondary" id="form-feedback">
+                  Thank you for reaching out. Your stay inquiry has been dispatched to our island reservations desk. We will respond directly to your email within 24 hours.
+                </div>
+<!-- CTA Button -->
+<div>
+<button class="w-full md:w-auto inline-block bg-primary-container text-surface-container-lowest hover:bg-secondary px-9 py-4 text-label-lg font-label-lg uppercase tracking-wider transition-colors duration-200" type="submit">
+                    SEND INQUIRY
+                  </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION SEPARATION DIVIDER -->
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="border-t border-outline-variant/30"></div>
+</div>
+<!-- 3. VERIFIED FAQ / HELPFUL NOTES -->
+<section class="py-space-xl md:py-space-2xl">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="max-w-3xl mb-12">
+<span class="text-label-caption font-label-caption text-secondary uppercase tracking-widest font-semibold block mb-2">ESSENTIAL ISLAND LOGISTICS</span>
+<h2 class="font-headline-md text-headline-md text-primary">Helpful Notes &amp; Local Island Protocol</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Dhigurah is an inhabited Maldivian island. Experiencing authentic local culture goes hand in hand with responsible, tranquil travel habits.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Note 1: Island Dress Codes -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 p-6 md:p-8 space-y-4">
+<div class="w-10 h-10 flex items-center justify-center bg-surface-container text-primary">
+<span class="material-symbols-outlined">apparel</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Island Dress Codes</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Inside the local village and public streets, modest attire covering shoulders and knees is respected by local customs. On Dhigurah's dedicated white Bikini Beach and excursion boats, swimwear and standard resort beach attire are fully welcomed.
+            </p>
+<div class="pt-2 text-label-caption font-label-caption text-outline uppercase tracking-wider">
+              Bikini Beach Access: Free &amp; 5-min walk
+            </div>
+</div>
+<!-- Note 2: Transfer Scheduling -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 p-6 md:p-8 space-y-4">
+<div class="w-10 h-10 flex items-center justify-center bg-surface-container text-primary">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Transfer Scheduling</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Speedboats operate on set timetables (typically morning and afternoon runs from Malé). To secure transfers seamlessly, we recommend providing international arrival flight numbers at least 3 days prior to your arrival date.
+            </p>
+<div class="pt-2 text-label-caption font-label-caption text-outline uppercase tracking-wider">
+              Lagoon Transit: 1hr 45m / Air: 20m + boat
+            </div>
+</div>
+<!-- Note 3: Payment & Currencies -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 p-6 md:p-8 space-y-4">
+<div class="w-10 h-10 flex items-center justify-center bg-surface-container text-primary">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Payment &amp; Currencies</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              We accept major credit cards (Visa, MasterCard) as well as cash payments in USD (crisp, unblemished banknotes series 2013+) and Maldivian Rufiyaa (MVR). A local Bank of Maldives ATM is situated on the island for cash withdrawals.
+            </p>
+<div class="pt-2 text-label-caption font-label-caption text-outline uppercase tracking-wider">
+              On-Island ATM: Active in village center
+            </div>
+</div>
+</div>
+<!-- Direct Assistance Banner -->
+<div class="mt-12 p-8 bg-surface-container border border-outline-variant/40 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="space-y-1 text-center md:text-left">
+<h4 class="font-headline-sm text-headline-sm text-primary">Require immediate itinerary verification?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Speak directly with our island concierge team via verified telephone.</p>
+</div>
+<a class="bg-surface-container-lowest border border-primary text-primary px-6 py-3 font-label-lg text-label-lg uppercase tracking-wider hover:bg-primary hover:text-surface-container-lowest transition-colors flex items-center gap-2 shrink-0" href="tel:+9607774749">
+<span class="material-symbols-outlined text-sm">call</span>
+            DIAL +960 777-4749
+          </a>
+</div>
+</div>
+</section>
+</main>
+<!-- 4. SHARED EDITORIAL FOOTER (Derived directly from Shared Components JSON) -->
+<footer class="bg-surface-container dark:bg-primary-container border-t border-outline-variant/40 dark:border-outline/20">
+<div class="w-full px-margin-mobile md:px-margin py-space-xl md:py-space-2xl max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-gutter mb-12">
+<!-- Left: Brand Identity -->
+<div class="md:col-span-5 space-y-4">
+<span class="text-headline-md font-headline-md font-medium text-primary dark:text-inverse-primary tracking-wide block">
+            DHIGURAH HOLIDAYS
+          </span>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-outline-variant max-w-sm leading-relaxed">
+            Quiet luxury, bespoke maritime experiences, and authentic island life nestled along South Ari Atoll's longest natural white-sand beach.
+          </p>
+<div class="pt-2 text-label-caption font-label-caption uppercase tracking-wider text-outline dark:text-outline-variant">
+            South Ari Atoll, Republic of Maldives
+          </div>
+</div>
+<!-- Right: Links Matrix -->
+<div class="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-6">
+<div class="space-y-3">
+<span class="text-label-caption font-label-caption uppercase tracking-wider text-primary dark:text-inverse-primary font-semibold block">SANCTUARY</span>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant dark:text-outline-variant text-body-sm font-body-sm hover:text-primary dark:hover:text-inverse-primary underline underline-offset-4 decoration-outline-variant transition-all duration-200" href="#rooms">Rooms</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant text-body-sm font-body-sm hover:text-primary dark:hover:text-inverse-primary underline underline-offset-4 decoration-outline-variant transition-all duration-200" href="#experiences">Experiences</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant text-body-sm font-body-sm hover:text-primary dark:hover:text-inverse-primary underline underline-offset-4 decoration-outline-variant transition-all duration-200" href="#gallery">Gallery</a></li>
+</ul>
+</div>
+<div class="space-y-3">
+<span class="text-label-caption font-label-caption uppercase tracking-wider text-primary dark:text-inverse-primary font-semibold block">THE ISLAND</span>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant dark:text-outline-variant text-body-sm font-body-sm hover:text-primary dark:hover:text-inverse-primary underline underline-offset-4 decoration-outline-variant transition-all duration-200" href="#about">About</a></li>
+<li><a class="text-primary dark:text-inverse-primary font-medium text-body-sm font-body-sm" href="#contact">Contact</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant text-body-sm font-body-sm hover:text-primary dark:hover:text-inverse-primary underline underline-offset-4 decoration-outline-variant transition-all duration-200" href="#island-guide">Island Guide</a></li>
+</ul>
+</div>
+<div class="space-y-3">
+<span class="text-label-caption font-label-caption uppercase tracking-wider text-primary dark:text-inverse-primary font-semibold block">COMMITMENT</span>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant dark:text-outline-variant text-body-sm font-body-sm hover:text-primary dark:hover:text-inverse-primary underline underline-offset-4 decoration-outline-variant transition-all duration-200" href="#sustainability">Sustainability</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant text-body-sm font-body-sm hover:text-primary dark:hover:text-inverse-primary underline underline-offset-4 decoration-outline-variant transition-all duration-200" href="#privacy">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant text-body-sm font-body-sm hover:text-primary dark:hover:text-inverse-primary underline underline-offset-4 decoration-outline-variant transition-all duration-200" href="#terms">Terms of Stay</a></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Hairline divider -->
+<div class="border-t border-outline-variant/30 dark:border-outline/20 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+<p class="text-label-caption font-label-caption uppercase tracking-wider text-on-surface-variant dark:text-outline-variant text-center sm:text-left">
+          © 2025 Dhigurah Holidays, South Ari Atoll, Maldives. All rights reserved.
+        </p>
+<div class="text-label-caption font-label-caption uppercase tracking-wider text-outline dark:text-outline-variant flex items-center gap-4">
+<span>MALDIVES RESORT &amp; GUESTHOUSE REGISTRY</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Guest counter script -->
+<script>
+    let guestCounts = { adults: 2, children: 0 };
+
+    function incrementGuest(type) {
+      if (guestCounts[type] < 10) {
+        guestCounts[type]++;
+        document.getElementById(type + '-count').innerText = guestCounts[type];
+      }
+    }
+
+    function decrementGuest(type) {
+      const min = type === 'adults' ? 1 : 0;
+      if (guestCounts[type] > min) {
+        guestCounts[type]--;
+        document.getElementById(type + '-count').innerText = guestCounts[type];
+      }
+    }
+  </script>
+</body></html>

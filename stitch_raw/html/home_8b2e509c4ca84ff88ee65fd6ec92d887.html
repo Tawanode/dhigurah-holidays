@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dhigurah Holidays — Boutique Island Sanctuary, South Ari Atoll Maldives</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@100..900&family=Playfair+Display:wght@100..900&display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary": "#ffffff",
+            "on-secondary-fixed-variant": "#00513f",
+            "surface": "#f6fbf4",
+            "surface-dim": "#d7dbd5",
+            "tertiary-fixed-dim": "#8ecff0",
+            "surface-variant": "#dfe4dd",
+            "on-secondary-fixed": "#002117",
+            "on-primary-container": "#7ca89d",
+            "on-tertiary-container": "#66a7c6",
+            "inverse-primary": "#a3d0c4",
+            "on-tertiary-fixed": "#001f2b",
+            "on-error": "#ffffff",
+            "surface-container-low": "#f0f5ee",
+            "on-tertiary-fixed-variant": "#004d65",
+            "background": "#f6fbf4",
+            "inverse-on-surface": "#eef2eb",
+            "surface-container-lowest": "#ffffff",
+            "primary": "#002620",
+            "on-primary-fixed-variant": "#234e45",
+            "tertiary-fixed": "#bfe8ff",
+            "surface-bright": "#f6fbf4",
+            "outline-variant": "#c0c8c5",
+            "surface-container-high": "#e5e9e3",
+            "secondary-container": "#a4f2d6",
+            "outline": "#717976",
+            "secondary-fixed": "#a4f2d6",
+            "error": "#ba1a1a",
+            "secondary-fixed-dim": "#89d5ba",
+            "primary-container": "#103d35",
+            "on-error-container": "#93000a",
+            "error-container": "#ffdad6",
+            "on-surface-variant": "#404846",
+            "surface-container": "#ebefe9",
+            "surface-container-highest": "#dfe4dd",
+            "surface-tint": "#3c665d",
+            "on-tertiary": "#ffffff",
+            "on-secondary-container": "#1f715a",
+            "on-background": "#181d19",
+            "on-primary-fixed": "#00201b",
+            "primary-fixed-dim": "#a3d0c4",
+            "tertiary-container": "#003b4f",
+            "primary-fixed": "#bfece0",
+            "tertiary": "#002432",
+            "secondary": "#166b55",
+            "inverse-surface": "#2d322d",
+            "on-primary": "#ffffff",
+            "on-surface": "#181d19"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.375rem",
+            "margin": "4rem",
+            "margin-mobile": "1.25rem",
+            "space-sm": "0.75rem",
+            "space-xl": "3.5rem",
+            "space-md": "1.25rem",
+            "gutter": "2rem",
+            "space-3xl": "8rem",
+            "space-2xl": "5.5rem",
+            "gutter-mobile": "1rem",
+            "space-lg": "2.25rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "display-lg-mobile": ["Playfair Display"],
+            "body-sm": ["Manrope"],
+            "headline-sm": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "label-md": ["Manrope"],
+            "display-md-mobile": ["Playfair Display"],
+            "body-lg": ["Manrope"],
+            "display-lg": ["Playfair Display"],
+            "title-editorial": ["Playfair Display"],
+            "body-md": ["Manrope"],
+            "label-lg": ["Manrope"],
+            "label-caption": ["Manrope"],
+            "display-md": ["Playfair Display"]
+          },
+          "fontSize": {
+            "headline-lg": ["2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-md": ["1.875rem", { "lineHeight": "2.375rem", "fontWeight": "500" }],
+            "display-lg-mobile": ["2.75rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }],
+            "headline-sm": ["1.375rem", { "lineHeight": "1.875rem", "fontWeight": "600" }],
+            "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "500" }],
+            "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "display-md-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.875rem", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "display-lg": ["4.5rem", { "lineHeight": "5rem", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "title-editorial": ["1.5rem", { "lineHeight": "2.25rem", "fontWeight": "400" }],
+            "body-md": ["1rem", { "lineHeight": "1.625rem", "fontWeight": "400" }],
+            "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "label-caption": ["0.6875rem", { "lineHeight": "0.9375rem", "letterSpacing": "0.05em", "fontWeight": "500" }],
+            "display-md": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.015em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .tilt-left {
+      transform: rotate(-1.3deg);
+      transition: transform 0.4s ease;
+    }
+    .tilt-right {
+      transform: rotate(1.1deg);
+      transition: transform 0.4s ease;
+    }
+    .tilt-left:hover, .tilt-right:hover {
+      transform: rotate(0deg) scale(1.01);
+    }
+    .editorial-shadow {
+      box-shadow: 0 24px 48px -18px rgba(16, 61, 53, 0.09);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md selection:bg-secondary-container selection:text-on-secondary-fixed">
+<!-- ==================== TOP NAVIGATION SHELL ==================== -->
+<header class="sticky top-0 z-50 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin py-4 md:py-6 max-w-7xl mx-auto">
+<!-- Brand Wordmark & Emblem -->
+<a class="flex items-center gap-3 group" href="#home" onclick="switchRoute('home')">
+<span class="material-symbols-outlined text-primary text-2xl group-hover:text-secondary transition-colors duration-200">spa</span>
+<span class="text-headline-sm font-headline-sm font-semibold tracking-wider text-primary">DHIGURAH HOLIDAYS</span>
+</a>
+<!-- Desktop Navigation Links (Authority from Shared JSON) -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="nav-item text-label-md font-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-200" data-route="rooms" href="#rooms" onclick="switchRoute('rooms')">Rooms</a>
+<a class="nav-item text-label-md font-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-200" data-route="experiences" href="#experiences" onclick="switchRoute('experiences')">Experiences</a>
+<a class="nav-item text-label-md font-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-200" data-route="gallery" href="#gallery" onclick="switchRoute('gallery')">Gallery</a>
+<a class="nav-item text-label-md font-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-200" data-route="about" href="#about" onclick="switchRoute('about')">About</a>
+<a class="nav-item text-label-md font-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-200" data-route="contact" href="#contact" onclick="switchRoute('contact')">Contact</a>
+</nav>
+<!-- Action Button -->
+<div class="flex items-center gap-4">
+<a class="hidden sm:inline-block bg-primary-container text-surface-container-lowest px-6 py-3 text-label-lg font-label-lg uppercase tracking-wider hover:bg-secondary transition-colors duration-200" href="#contact" onclick="switchRoute('contact')">
+          MAKE AN INQUIRY
+        </a>
+<button aria-label="Toggle Navigation Menu" class="md:hidden text-primary p-2 focus:outline-none" id="mobile-toggle">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Drawer Navigation -->
+<div class="hidden md:hidden px-margin-mobile pb-6 pt-2 bg-surface-container-lowest border-t border-outline-variant/20 flex-col space-y-4" id="mobile-menu">
+<a class="text-label-md font-label-md uppercase tracking-widest py-2 border-b border-surface-container text-primary" href="#home" onclick="switchRoute('home'); toggleMenu();">Home</a>
+<a class="text-label-md font-label-md uppercase tracking-widest py-2 border-b border-surface-container text-on-surface-variant" href="#rooms" onclick="switchRoute('rooms'); toggleMenu();">Rooms</a>
+<a class="text-label-md font-label-md uppercase tracking-widest py-2 border-b border-surface-container text-on-surface-variant" href="#experiences" onclick="switchRoute('experiences'); toggleMenu();">Experiences</a>
+<a class="text-label-md font-label-md uppercase tracking-widest py-2 border-b border-surface-container text-on-surface-variant" href="#gallery" onclick="switchRoute('gallery'); toggleMenu();">Gallery</a>
+<a class="text-label-md font-label-md uppercase tracking-widest py-2 border-b border-surface-container text-on-surface-variant" href="#about" onclick="switchRoute('about'); toggleMenu();">About</a>
+<a class="text-label-md font-label-md uppercase tracking-widest py-2 border-b border-surface-container text-on-surface-variant" href="#contact" onclick="switchRoute('contact'); toggleMenu();">Contact</a>
+<a class="w-full text-center bg-primary-container text-surface-container-lowest py-3 text-label-lg font-label-lg uppercase tracking-wider block mt-4" href="#contact" onclick="switchRoute('contact'); toggleMenu();">
+        MAKE AN INQUIRY
+      </a>
+</div>
+</header>
+<!-- ==================== MAIN ROUTER CONTAINER ==================== -->
+<main class="w-full overflow-hidden" id="app-viewport">
+<!-- ==================== VIEW: HOME (PRIMARY) ==================== -->
+<section class="route-view block" id="view-home">
+<!-- HERO SECTION -->
+<section class="relative pt-6 md:pt-10 pb-space-2xl md:pb-space-3xl px-margin-mobile md:px-margin max-w-7xl mx-auto">
+<div class="relative bg-surface-container-lowest p-3 md:p-6 editorial-shadow">
+<!-- Editorial Canvas Frame with Subtle White Margin -->
+<div class="relative w-full h-[620px] md:h-[760px] overflow-hidden bg-primary-container">
+<img alt="Dhigurah Island Maldives Shoreline" class="w-full h-full object-cover opacity-90 scale-105 transition-transform duration-1000 ease-out" data-alt="An expansive panoramic view of Dhigurah island in the Maldives during soft golden hour light. Turquoise lagoon waters with crystal clarity lap gently against a pristine white sand shoreline framed by lush, wild coconut palm trees. Soft sun-dappled textures, warm ivory sands, subtle deep ocean green undertones, serene luxury travel editorial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACtADckMateAAAazuodt7Iw2zi4CYpFeKx3qqxocgwbDTPBwFpD4F-QWQjyVQ6TncXZ0LfYIOc5c6Fmyk0qCeLV1cSWOc85cLEyubFXOwFbTfj3m5w8o8EQGcfpUz_CGUJNA3IInX-428C1Ne0_UflPsrKRVlS2ggfQgPKAWn4RSlfNmOFAPCiMF7r0N4dwTjrxmnqc4SdwRfQLQJWzBceyJ_4KhyK8H68os-I06S9DXCNGQnt7AbI"/>
+<!-- Editorial Vignette Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/85 via-primary/30 to-transparent"></div>
+<!-- Content Overlay -->
+<div class="absolute inset-0 flex flex-col justify-end p-6 md:p-16 max-w-4xl">
+<span class="text-secondary-fixed text-label-md font-label-md uppercase tracking-widest mb-3 flex items-center gap-2">
+<span class="inline-block w-8 h-[1px] bg-secondary-fixed"></span>
+                South Ari Atoll — Maldives
+              </span>
+<h1 class="text-surface-container-lowest font-headline-lg text-headline-lg-mobile md:font-display-lg md:text-display-lg leading-tight md:leading-none mb-6">
+                Find Your Own Island Rhythm
+              </h1>
+<p class="text-surface-container-low font-body-lg text-body-md md:text-body-lg max-w-2xl mb-10 leading-relaxed font-light">
+                Stay close to the beach, discover the beauty beneath the waves, and experience the quieter side of the Maldives on the local island of Dhigurah.
+              </p>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+<a class="text-center bg-surface-container-lowest text-primary px-8 py-4 text-label-lg font-label-lg uppercase tracking-wider hover:bg-secondary-container transition-colors duration-200" href="#experiences" onclick="switchRoute('experiences')">
+                  EXPLORE THE ISLAND
+                </a>
+<a class="text-center border border-surface-container-lowest text-surface-container-lowest px-8 py-4 text-label-lg font-label-lg uppercase tracking-wider hover:bg-surface-container-lowest/15 transition-colors duration-200" href="#rooms" onclick="switchRoute('rooms')">
+                  DISCOVER OUR ROOMS
+                </a>
+</div>
+</div>
+<!-- Island Coordinates Badge -->
+<div class="absolute top-8 right-8 hidden md:block bg-surface-container-lowest/80 backdrop-blur-sm px-4 py-2 border border-outline-variant/30">
+<span class="font-label-caption text-label-caption text-primary tracking-widest uppercase">3°32'N 72°55'E • 3.1 KM ATOLL</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: INTRODUCTION -->
+<section class="py-space-xl md:py-space-3xl bg-surface-container-low border-y border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-gutter items-center">
+<!-- Left Editorial Text Lockup (5 Cols) -->
+<div class="lg:col-span-5 space-y-6">
+<div class="inline-flex items-center gap-2">
+<span class="w-2 h-2 bg-secondary rounded-full"></span>
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest">WELCOME TO DHIGURAH</span>
+</div>
+<h2 class="text-primary font-headline-lg text-headline-lg-mobile md:text-headline-lg leading-tight">
+                A Little Closer to the Real Maldives
+              </h2>
+<div class="space-y-4 text-on-surface-variant font-body-md text-body-md leading-relaxed">
+<p>
+                  Stretching over three kilometers along the rim of the South Ari Atoll, Dhigurah is celebrated for its endless powder-soft sandbanks, untouched tropical jungle spine, and celebrated marine sanctuary.
+                </p>
+<p>
+                  At Dhigurah Holidays, we curate an intimate refuge away from artificial resort complexes. Here, island hospitality flows at the steady tempo of ocean tides, salt breeze, and morning fishing skiffs drifting into the lagoon.
+                </p>
+</div>
+<div class="pt-4">
+<a class="inline-flex items-center gap-3 text-primary font-label-lg text-label-lg uppercase tracking-wider group hover:text-secondary transition-colors" href="#about" onclick="switchRoute('about')">
+<span>ABOUT OUR GUESTHOUSE</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Right Asymmetric Overlapping Photo Stack (7 Cols) -->
+<div class="lg:col-span-7 relative flex justify-center items-center py-6">
+<!-- Back Rotated Photo Card -->
+<div class="relative w-4/5 md:w-3/5 p-3 md:p-4 bg-surface-container-lowest tilt-left editorial-shadow z-10">
+<div class="w-full h-80 md:h-96 overflow-hidden bg-surface-variant">
+<img alt="Dhigurah Village Path" class="w-full h-full object-cover" data-alt="Intimate morning light over an authentic Maldivian sand path flanked by wild hibiscus and towering palm trees on Dhigurah island. The path leads toward an open ocean vista with pristine turquoise water. Natural earthy warm sand tones, clean crisp composition, timeless travel photo aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjzDyK27waUFkX8Nh3EZ7W1YtEVIhSNdcAqX4Adz8WmN4dZsYXvfVaG95_NBMW3b4q4rKWXG8KO4tUd9oq9TNiAw2Y9o1NW0pBQLdPznNmxWcNK4DBvNrkRtNgiKoTuCtexVOy0NT-05GZalqE9Bo1y9GelVPEYsddx9Q9vvWTgiZJL8s5iSlc-tDi1k8BuB_qCrko0VCrftSPptfNTNOIqENEnjuIhw0jCFrV6TzS-HsmX4MBiU7z"/>
+</div>
+<div class="pt-3 pb-1 flex justify-between items-center text-on-surface-variant text-label-caption font-label-caption">
+<span>FIG 01. VILLAGE CANOPY</span>
+<span>SOUTH ARI</span>
+</div>
+</div>
+<!-- Front Overlapping Rotated Card -->
+<div class="absolute -bottom-8 right-2 md:right-8 w-3/5 md:w-1/2 p-3 bg-surface-container-lowest tilt-right editorial-shadow z-20">
+<div class="w-full h-64 md:h-72 overflow-hidden bg-surface-variant">
+<img alt="Guesthouse Interior Detail" class="w-full h-full object-cover" data-alt="A tranquil guest reading nook featuring handmade rattan seating, crisp linen cushions in sand-ivory tones, and a fresh tropical green frond in a minimalist stone vase. Soft tropical window lighting illuminating warm timber finishes and pristine whitewashed walls." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-rc70HislJQnJzJtOLUqPiVrJzNGQ8jvpvKcaLTDZ0YhzaKiiZgO2oPR_t0IY2fvFjz-KQrlZE_YziL7MZ0yunb_omEU9TfxFsr9-1DFWd4VWQTKrNaY4Vcfygq0UjY1NEl_WLCNvCqGnEFM29_ilBS8C72_ofYM3tLsM6_C_S_OHHmj6J_7_XH-vKELB_mMz8mwI9z3oQaJc28r1OoAYyEmBG4sFDGuit8HWlPCiTmpSOtbsYidv"/>
+</div>
+<div class="pt-2 text-center text-primary font-label-caption text-label-caption">
+<span>UNHURRIED LIVING AT OUR RETREAT</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: THE ISLAND EXPERIENCE -->
+<section class="py-space-2xl md:py-space-3xl max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 border-b border-outline-variant/30 pb-8">
+<div>
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest block mb-2">CURATED PURSUITS</span>
+<h2 class="text-primary font-headline-lg text-headline-lg-mobile md:text-headline-lg">The Island Experience</h2>
+</div>
+<p class="max-w-md text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+            Dhigurah is universally renowned as the Maldivian haven for year-round whale shark encounters and authentic coastal adventures.
+          </p>
+</div>
+<!-- 6-Item Bento Editorial Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Experience 1 -->
+<div class="bg-surface-container-lowest p-6 border border-outline-variant/30 flex flex-col justify-between group hover:border-primary transition-all duration-300">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-secondary text-3xl">surfing</span>
+<span class="font-headline-sm text-headline-sm text-outline-variant">01</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Beach Days</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+                Miles of powdery white coastline where the warm Indian Ocean meets gently swinging coconut palm shades with absolute seclusion.
+              </p>
+</div>
+<div class="h-44 w-full overflow-hidden bg-surface-variant">
+<img alt="Beach Days at Dhigurah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Pristine white sand shoreline on Dhigurah island with gently rolling crystal blue water and lush green coconut palms dipping toward the shore. Warm daylight with luminous azure ocean tones and clean minimal editorial composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFVk4SjZNHFozuXavIdiYexRZ9En30tChigqVjDiFY3WBcSEt3fv36cZtNziVpIi4j5uKXNI1pnZ9f_lweH6q30yQw6_vve1x1SSIjmLcLeS5dZdm3hbRHJpIuvRKVetqqeJI3GMNkPhpkyB3nedsaVmWw1kFzUYHk07HwoZisb7g5lmuNqTOqQ8nDyW1ac78tR9ziW89lqV7NmDEI3MJUWNlYHyI7anH3u78l7qZlhtJwKrEvwmdI"/>
+</div>
+</div>
+<!-- Experience 2: Highlighted Whale Shark -->
+<div class="bg-primary-container text-surface-container-lowest p-6 border border-primary-container flex flex-col justify-between relative overflow-hidden group">
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-secondary-fixed text-3xl">scuba_diving</span>
+<span class="font-headline-sm text-headline-sm text-secondary-fixed/50">02</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-surface-container-lowest mb-2">Whale Shark Encounters</h3>
+<p class="font-body-sm text-body-sm text-surface-container-low/90 leading-relaxed mb-6">
+                South Ari Atoll is the world's most consistent year-round sanctuary for gentle whale sharks swimming along the outer reef break.
+              </p>
+</div>
+<div class="h-44 w-full overflow-hidden bg-primary relative z-10">
+<img alt="Whale Shark Expedition" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" data-alt="An awe-inspiring underwater view of a massive gentle whale shark gliding gracefully through sun-pierced crystal clear turquoise Maldivian waters. Deep cyan gradients, luminous tropical light rays, quiet marine grandeur in a prestigious documentary style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_Fi9MfvurXsNvXk7A7C8RhKB5xmFmnvR8PkolGCBKP7KRGxczcil60Dg7Ml8UxpwR-Ux7JQ_hqZHIA8UdXMWamxDQOPoqpofcqL_ddq-hfhKDBqgGNW0YE2yE3BBQW01GFw9-Qinvdg3Xu7sRJkOS9j-SSYLz9aWg8NJToLa2372mPPnX5Bzt4-oT3TqxLhL9HWuWde4peKs-9SWwts08ZeqnvPF5d8yCD95JpaugmTw0N_uMqCjw"/>
+</div>
+</div>
+<!-- Experience 3 -->
+<div class="bg-surface-container-lowest p-6 border border-outline-variant/30 flex flex-col justify-between group hover:border-primary transition-all duration-300">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-secondary text-3xl">waves</span>
+<span class="font-headline-sm text-headline-sm text-outline-variant">03</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Snorkelling Adventures</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+                Step right from the shoreline into coral gardens teeming with hawksbill sea turtles, graceful eagle rays, and vibrant reef fish.
+              </p>
+</div>
+<div class="h-44 w-full overflow-hidden bg-surface-variant">
+<img alt="Snorkelling Adventures" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Crystal clear underwater scene of a healthy Maldivian coral reef with a graceful green sea turtle gliding above golden table corals. Shimmering turquoise water illuminated by direct tropical sunlight, natural serene marine wildlife photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrfoEibfIDix_IY_FoKU88B8AteNeAqWUZld33YkiFqXclbO_-vWNVcsAXuhwnbaHstnnd3L7AK81gufDlZNfoA0T0KLe5DX_Ob2Uh6jiIe3-ie6f3iCOvmB8HDQjAeCY2lrTWjcFvsfXYd-mnP7b8Sy1ZKyuY3gW6X3CrPQDPsumza9kAqUjBbd8KB2V0iOeLUmL_aBTh-kAC6JOahQhXiwLTPMsRXrCsxm8acTLa08HN3eFrZ-tP"/>
+</div>
+</div>
+<!-- Experience 4 -->
+<div class="bg-surface-container-lowest p-6 border border-outline-variant/30 flex flex-col justify-between group hover:border-primary transition-all duration-300">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-secondary text-3xl">navigation</span>
+<span class="font-headline-sm text-headline-sm text-outline-variant">04</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Diving Experiences</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+                Access to over thirty world-class dive sites, dramatic coral thilas, channels, and pinnacles guided by certified local PADI divemasters.
+              </p>
+</div>
+<div class="h-44 w-full overflow-hidden bg-surface-variant">
+<img alt="Atoll Scuba Diving" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Deep ocean dive scene showing rich soft corals clinging to an underwater thila pinnacle while schools of yellow snappers swim in formation. Deep ocean green and luminous turquoise color tones, high resolution marine magazine quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNKGTMWijUH0EItutRsm2OZaEvktbO0z7Iz_VuxIhmw50XZcMZ2PzofCmqoVJ_fuSXjRa35kzzcgES0YBnQBBQRPnHLQKqi2gecRW5XX_FFYG2NpZai3MOkwhkltuY8Ut4pt1GiiUPH9d-iJCgrkjq13q3YkBNw-htU-TXGAAKsQJC-5dJjHcHf4MfNITtnWFHF39W-CBX8LicYDPRwJaWDjXgw9CXYEJQyLnEzRGQrkDZFty1fE9S"/>
+</div>
+</div>
+<!-- Experience 5 -->
+<div class="bg-surface-container-lowest p-6 border border-outline-variant/30 flex flex-col justify-between group hover:border-primary transition-all duration-300">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-secondary text-3xl">pedal_bike</span>
+<span class="font-headline-sm text-headline-sm text-outline-variant">05</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Cycling Around the Island</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+                Take complimentary retro cruisers along shaded white sand avenues, visiting local cafes, boatyards, and quiet coastal clearings.
+              </p>
+</div>
+<div class="h-44 w-full overflow-hidden bg-surface-variant">
+<img alt="Island Cycling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A vintage cruiser bicycle resting against a weathered coconut palm trunk beside an empty white sand pathway in Dhigurah village. Dappled sunlight through tropical canopy, warm earthy tones, peaceful barefoot island lifestyle." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpQO_dRS3EpwXZ5Oea0xsR1ZdftDrb1oRGWdiuFUTrVb0cnz-74Su2o7sOdlETTvdf0K7aQEXNgKGk1p19-DNYR2LaVgMMgy-hIQVpmYo-0wy0NzV99HftVPwdxHOJ-_mNFUivEvuwjQQ8oIUoRC0nR0HrRIYrDaZxtucwqgL9FuyfJ9esnq9X6UUYK7qOfkutDlQMRSDFTVy3Z4ZxoC2PCYNwdpIzOjvJDbVG5u-AuIypQ0S8XtGR"/>
+</div>
+</div>
+<!-- Experience 6 -->
+<div class="bg-surface-container-lowest p-6 border border-outline-variant/30 flex flex-col justify-between group hover:border-primary transition-all duration-300">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-secondary text-3xl">wb_sunny</span>
+<span class="font-headline-sm text-headline-sm text-outline-variant">06</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Southern Sandbank Tip</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+                Walk to the southern tip where Dhigurah tapers into a kilometer-long sliver of sand encircled entirely by translucent tidal pools.
+              </p>
+</div>
+<div class="h-44 w-full overflow-hidden bg-surface-variant">
+<img alt="Southern Sandbank Exploration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Spectacular high-angle drone perspective of the famous southern sandbank tip of Dhigurah island tapering into endless turquoise ocean. Pristine ivory white sandbar surrounded by shallow lagoon waters of varied azure and deep teal tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD8lHddUK13tKHahlQQ6Vmjb-mLZlMPRCM9G0V-rMAgfYN9SjGNwZ6A8_ucKlP2hCdsAGXjzCGz_5UyVG9EDmqh1gLKC_zWB7kVlZJxGm7q9XNRRd8uhQbW0jyXDdsH1DR7jPaBhptVa2t9bPdR8NcoC5GSPbdsD0Vo_X-KLF9xfChCNvyB5evzbj-_xJ1bfWQSxaawkHG-vaQh403vjMn5_yx4oM-B96Ye1kancWVWob8usPZK5Am"/>
+</div>
+</div>
+</div>
+<!-- Note & Operator Arrangements -->
+<div class="mt-12 p-8 bg-surface-container border-l-2 border-primary flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+<div class="space-y-1">
+<span class="text-label-md font-label-md uppercase tracking-wider text-primary font-semibold">LOCAL OPERATOR PARTNERSHIPS</span>
+<p class="text-on-surface-variant text-body-sm font-body-sm max-w-2xl">
+              All ocean excursions and diving itineraries are managed in collaboration with accredited, marine-biologist staffed local boat captains and dive centres on Dhigurah.
+            </p>
+</div>
+<a class="inline-block whitespace-nowrap bg-primary text-surface-container-lowest px-6 py-3 text-label-md font-label-md uppercase tracking-widest hover:bg-secondary transition-colors" href="#experiences" onclick="switchRoute('experiences')">
+            EXPLORE EXPERIENCES
+          </a>
+</div>
+</section>
+<!-- SECTION 4: ROOMS PREVIEW -->
+<section class="py-space-2xl md:py-space-3xl bg-surface-container-low border-t border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-gutter items-center">
+<!-- Large Airy Room Imagery (7 Cols) -->
+<div class="lg:col-span-7">
+<div class="relative bg-surface-container-lowest p-3 md:p-5 editorial-shadow">
+<div class="relative w-full h-[460px] md:h-[540px] overflow-hidden bg-surface-variant">
+<img alt="Quiet Deluxe Room at Dhigurah Holidays" class="w-full h-full object-cover" data-alt="An expansive, light-filled luxury boutique bedroom suite with natural oak wood king bed dressed in crisp white linen sheets. Tall French glass doors opening directly toward a private tropical garden terrace with lush green monstera and palm leaves. Warm ivory walls, gentle ocean sunlight, quiet sophisticated sanctuary aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-uiVSuf6mFHUmJJSlAkuKxB71MD5tcCKOxaeElhWjR4Q3AQVY75UFueuaT_o1E4tNP9DZ5VPva_XzzBGev9ZKiVmAsn6UHvgzsnWP-YXD7RTWhvaEH1dWzasG2vlEwMpfGNSVKPMyG9mhjKUfmTsJPNmYQX6vYnxVoIwjwEKQXI5NSloIED0_ASjuhCZwGH5NWhdH2RMlcsdeh3FxMTzqBc1xX-5FEHRxG2JAoqO2PzyYH8tsjXO_"/>
+<div class="absolute bottom-4 left-4 bg-primary/80 backdrop-blur-md text-surface-container-lowest px-4 py-2 font-label-caption text-label-caption tracking-wider uppercase">
+                    DELUXE GARDEN TERRACE ROOM
+                  </div>
+</div>
+</div>
+</div>
+<!-- Content & Tabular Specifications (5 Cols) -->
+<div class="lg:col-span-5 space-y-6">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest">PRIVATE SANCTUARY</span>
+<h2 class="text-primary font-headline-lg text-headline-lg-mobile md:text-headline-lg leading-tight">
+                Your Own Quiet Corner of the Island
+              </h2>
+<p class="text-on-surface-variant font-body-md text-body-md leading-relaxed">
+                Designed for restorative pauses after sun-drenched reef adventures. Enjoy modern air-conditioned tranquility, thoughtful organic textures, and peaceful garden views.
+              </p>
+<!-- Verified Amenities Spec List -->
+<div class="border-t border-outline-variant/40 pt-4 space-y-3">
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/20 text-body-sm font-body-sm">
+<span class="text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">ac_unit</span>
+                    Climate Control
+                  </span>
+<span class="font-medium text-primary">Whisper-quiet Air Conditioning</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/20 text-body-sm font-body-sm">
+<span class="text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">wifi</span>
+                    Connectivity
+                  </span>
+<span class="font-medium text-primary">Complimentary High-Speed Wi-Fi</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/20 text-body-sm font-body-sm">
+<span class="text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">shower</span>
+                    Bath
+                  </span>
+<span class="font-medium text-primary">En-suite Rain Shower & Amenities</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/20 text-body-sm font-body-sm">
+<span class="text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">yard</span>
+                    Outlook
+                  </span>
+<span class="font-medium text-primary">Lush Courtyard & Garden Views</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/20 text-body-sm font-body-sm">
+<span class="text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">coffee</span>
+                    Refreshments
+                  </span>
+<span class="font-medium text-primary">Artisan Tea & Coffee Station</span>
+</div>
+</div>
+<div class="pt-4">
+<a class="inline-block bg-primary text-surface-container-lowest px-8 py-4 text-label-lg font-label-lg uppercase tracking-wider hover:bg-secondary transition-colors" href="#rooms" onclick="switchRoute('rooms')">
+                  EXPLORE OUR ROOMS
+                </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: EDITORIAL GALLERY PREVIEW -->
+<section class="py-space-2xl md:py-space-3xl max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest">VISUAL JOURNAL</span>
+<h2 class="text-primary font-headline-lg text-headline-lg-mobile md:text-headline-lg">Moments from Dhigurah</h2>
+<p class="text-on-surface-variant font-body-md text-body-md">
+            Glimpses of daily life between the turquoise reef and shaded village lanes.
+          </p>
+</div>
+<!-- Asymmetric Editorial Gallery Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-7 bg-surface-container-lowest p-3 editorial-shadow">
+<div class="w-full h-80 md:h-[420px] overflow-hidden bg-surface-variant">
+<img alt="Guesthouse Exterior Architecture" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="Exterior architecture of the Dhigurah Holidays boutique retreat with clean modern whitewashed geometric walls, timber balcony screens, and warm ambient evening lighting amidst coconut palm silhouettes under a dusk sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1V0tzrTRGuDvLW4kiBTBvmaNtA6i33ykenQ0Hi5g_SlSgH3IiQa1oSiBd-cwnBkTM38kNvhPik7DIRceA1KiNHkHWA3KLh07ymyFkgmHZBpxY-2vHQuv2wBSQa8EYchjVNk5lg1VAxxr87SRkfTCGIWtxgiXlvBAHr5kjTZkBP9kehl9Ths0diFuY_Q4OtVbEfwQ5ePGf5OWyHvytaMR2Moh7eZLEA-nhX_0kFDDh-5wygVJf-q_F"/>
+</div>
+<p class="pt-3 font-label-caption text-label-caption text-on-surface-variant">GUESTHOUSE COURTYARD ARCHITECTURE</p>
+</div>
+<div class="md:col-span-5 bg-surface-container-lowest p-3 editorial-shadow">
+<div class="w-full h-80 md:h-[420px] overflow-hidden bg-surface-variant">
+<img alt="Lagoon Waters & Dhoni Boat" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="Overhead aerial composition of a traditional wooden Maldivian dhoni boat anchored gently in glowing shallow turquoise waters near Dhigurah island. Pristine sand ripples beneath transparent water, tranquil tropical seascape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmTqOYIZWlaLJoon5dcU2hDinMGBEngUmmzhFnLySgQwUyAjHTy1RT5udwWUywEMcjVGi9qYhstYK8lhBsPXqPY7Hh_CQAHemq-ebwZ_2vSzI2w0ZP-okVDAXG5nv022PW_sBZ-OtCrXLBHmdTkBUAs-Y9dJnudTCSSAKjeu59WnERhpnC83Uug9xVOZeWBVxjWgVDSo5urNlb7Nr_nBOCPJ9Haq3fYiENpdzp7l5OW8p1L9aYWkh9"/>
+</div>
+<p class="pt-3 font-label-caption text-label-caption text-on-surface-variant">LAGOON MOORING AT NOON</p>
+</div>
+<div class="md:col-span-4 bg-surface-container-lowest p-3 editorial-shadow">
+<div class="w-full h-72 md:h-80 overflow-hidden bg-surface-variant">
+<img alt="Refined Bathroom Details" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="Interior bathroom detail with minimalist brass tap fixtures, natural stone wash basin, rolled pure white organic cotton towels, and tropical fern leaf in soft natural morning daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNMW9VXuY2Nit9QltytZZq7dI0GE_pYU-MjFzUnvGsRLA7PIbn2E7txRU8frg93ZfmNlCY84eqtMsxpG6avGdMGFXMJ-4H5-sU-ur_0uAvvgATI8vlA8bOOHiUvF-KsLWOxcBG_F61m3SuyxWSzOdvO4v3f75Jp3YOWCxu7MEwdndG84LgwQrYYA1kItZFA0u9a1CScbaSCZIrm2TqJza_gXYZELz_mR2rGfZewHY9yy828dY11wNp"/>
+</div>
+<p class="pt-3 font-label-caption text-label-caption text-on-surface-variant">ORGANIC INTERIOR DETAILS</p>
+</div>
+<div class="md:col-span-4 bg-surface-container-lowest p-3 editorial-shadow">
+<div class="w-full h-72 md:h-80 overflow-hidden bg-surface-variant">
+<img alt="Marine Life in South Ari Atoll" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="A wild manta ray gracefully swimming over vibrant shallow coral gardens with gentle sea ripples above reflecting sunlight into crystalline turquoise waters. South Ari marine reserve wildlife." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmxGGjRA8cU18MfdpAYk4g7Q3ctYtsCTLRQQCx05xPuVw83EumSWM1byJ072fl6t4jFycZ--bpd8aBEvtTdsLFgXnh9Z0rWy_y3ERpU-myT8HAOzCaglGLhRZVWSInhpD9pvugHb94nDSeiQD4wtyJ57YeebRfH7qOqClSyhXepOLo2Lhi6jLb6YcUu3uf9F6Kd_hF2XsFKzQHQHnNUKjEpeIBWORdlKDsMk6wXjtEVm-7p3nBw64x"/>
+</div>
+<p class="pt-3 font-label-caption text-label-caption text-on-surface-variant">SOUTH ARI MARINE SANCTUARY</p>
+</div>
+<div class="md:col-span-4 bg-surface-container-lowest p-3 editorial-shadow">
+<div class="w-full h-72 md:h-80 overflow-hidden bg-surface-variant">
+<img alt="Evening Island Light" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="A golden sunset horizon over the open Indian ocean with silhouette of coconut palm fronds leaning over the tranquil tide line. Subtle gradient from soft peach to lavender twilight sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlD7jGnT7hFNWLHWdy47YQ-RELYo_aEvJzX6lcv59mySV3ymwdY99-A9vIfQzeW5RUAwim-I1tIpyr1IZ9WOz6F_-ljuwQWgdRdGL_1RjiG5dme0WZJZ35Q4l4HZDSOE4W7uNl8yECtXBT8gmaa4_JyPmWMzYAKWM5dSZnAUQ-8TELV8ZEJIfjRe75GirTVhwlXUe2eqpq2DiSPr4Jij0RQZaFvzeqGvi-kTsSHwn4c07fpehRAx0V"/>
+</div>
+<p class="pt-3 font-label-caption text-label-caption text-on-surface-variant">EVENING SHORELINE TIDES</p>
+</div>
+</div>
+<div class="text-center mt-12">
+<a class="inline-block border border-primary text-primary px-8 py-3 text-label-lg font-label-lg uppercase tracking-wider hover:bg-primary hover:text-surface-container-lowest transition-colors" href="#gallery" onclick="switchRoute('gallery')">
+            VIEW THE GALLERY
+          </a>
+</div>
+</section>
+<!-- SECTION 6: LOCATION & ATMOSPHERE -->
+<section class="py-space-2xl md:py-space-3xl bg-surface-container-low border-y border-outline-variant/30">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 space-y-6">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest">AUTHENTIC MALDIVES</span>
+<h2 class="text-primary font-headline-lg text-headline-lg-mobile md:text-headline-lg leading-tight">
+                On Dhigurah, in the Heart of South Ari Atoll
+              </h2>
+<div class="space-y-4 text-on-surface-variant font-body-md text-body-md leading-relaxed">
+<p>
+                  Unlike artificial resort islands isolated behind seawalls, Dhigurah is an active, welcoming Maldivian island community. Here, life is grounded in respectful island traditions, local boat craftsmanship, and a gentle rhythm shaped by sunrise and sunset.
+                </p>
+<p>
+                  Stroll through quiet, vehicle-free sand alleys shaded by breadfruit trees, exchange warm hellos with resident islanders, and sip fresh coconut water while watching the fishermen return at dusk.
+                </p>
+</div>
+<!-- Key Location Highlights -->
+<div class="grid grid-cols-2 gap-4 pt-4">
+<div class="border-l-2 border-secondary pl-4">
+<span class="font-headline-sm text-headline-sm text-primary block">20 Mins</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Domestic flight from Malé to Maamigili airport</span>
+</div>
+<div class="border-l-2 border-secondary pl-4">
+<span class="font-headline-sm text-headline-sm text-primary block">3.1 km</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Longest unbroken natural sand beach in the atoll</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6">
+<div class="relative bg-surface-container-lowest p-3 md:p-4 editorial-shadow">
+<div class="w-full h-96 md:h-[480px] overflow-hidden bg-surface-variant">
+<img alt="South Ari Atoll Island Coastline" class="w-full h-full object-cover" data-alt="Wide serene landscape photograph of Dhigurah island coastline during late afternoon with golden sunlight reflecting on shallow lagoon water and lush green jungle ridge curving along the coast. Pristine calm travel photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZeu0ap2hDRLkulylyKhbfypYcMuhfWPI2_BRqRhbrx6c_qf8G2TStn1UEJ4U3FQ2dN-PztfpvQltFAn5y-3p1vsTLlr71KAYdsDKUZKt0lag_sh1qtfz0uDIk_42p8wcwGuPHIgH7gVKR3hHX15by8rkpjceX77uG588Evxj0wvGbmx76M0I-KAdJ4NTKjScw9zII9eGyPvWNxcXK9ADM_uOCtB4h7A8K0QiilIQfLqG1SKBl0WKe"/>
+</div>
+<div class="pt-3 flex justify-between text-on-surface-variant font-label-caption text-label-caption">
+<span>KALUHOH KOARU HINGUN</span>
+<span>DHIGURAH 00070</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: INQUIRY BANNER -->
+<section class="py-space-2xl md:py-space-3xl max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="bg-primary-container p-8 md:p-16 text-center text-surface-container-lowest relative overflow-hidden">
+<div class="max-w-2xl mx-auto space-y-6 relative z-10">
+<span class="text-secondary-fixed text-label-md font-label-md uppercase tracking-widest block">PERSONALIZED RESERVATIONS</span>
+<h2 class="text-surface-container-lowest font-headline-lg text-headline-lg-mobile md:text-headline-lg leading-tight">
+              Your Island Escape Starts with a Conversation
+            </h2>
+<p class="text-surface-container-low/90 font-body-md text-body-md leading-relaxed font-light">
+              Tell us your ideal dates, travel party size, and excursion interests. Our island host will respond promptly with room availability and speed-boat or domestic transfer options.
+            </p>
+<div class="pt-4 flex flex-col sm:flex-row justify-center items-center gap-4">
+<a class="w-full sm:w-auto bg-surface-container-lowest text-primary px-10 py-4 text-label-lg font-label-lg uppercase tracking-wider hover:bg-secondary-container transition-colors" href="#contact" onclick="switchRoute('contact')">
+                PLAN YOUR STAY
+              </a>
+<a class="w-full sm:w-auto border border-surface-container-lowest/40 text-surface-container-lowest px-8 py-4 text-label-lg font-label-lg uppercase tracking-wider hover:bg-surface-container-lowest/10 transition-colors" href="tel:+9607774749">
+                CALL: +960 777-4749
+              </a>
+</div>
+</div>
+<!-- Subtle Decorative Compass Symbol -->
+<span class="material-symbols-outlined absolute -bottom-10 -right-10 text-[240px] text-surface-container-lowest/5 pointer-events-none select-none">explore</span>
+</div>
+</section>
+</section>
+<!-- ==================== VIEW: ROOMS ==================== -->
+<section class="route-view hidden py-space-xl md:py-space-2xl max-w-7xl mx-auto px-margin-mobile md:px-margin" id="view-rooms">
+<div class="mb-12 border-b border-outline-variant/30 pb-8">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest block mb-2">ACCOMMODATION</span>
+<h1 class="text-primary font-headline-lg text-headline-lg-mobile md:text-headline-lg">Quiet, Restful Island Chambers</h1>
+<p class="text-on-surface-variant font-body-md text-body-md max-w-2xl mt-4 leading-relaxed">
+          Crafted for deep rest after days in the sun. Each guestroom features modern air conditioning, premium Maldivian cotton bedding, and en-suite private bathrooms.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+<!-- Room Card 1 -->
+<div class="bg-surface-container-lowest p-4 border border-outline-variant/30 editorial-shadow">
+<div class="h-80 w-full overflow-hidden bg-surface-variant mb-6">
+<img alt="Deluxe King Room" class="w-full h-full object-cover" data-alt="A spacious deluxe king room at Dhigurah Holidays with high ceilings, crisp white linen bedding, natural teak bedside tables, and soft warm reading lamps. Sliding glass doors look out to tropical palm greenery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXXjL4IC_Gfx15cC0817NdsCIzjtGnEo1_lcJv5RC23tggiVsqAUQA-7oBr5pBijYCesM1UFjrKBNc9AVkBlN6cVj6vPA9ld4n0YP0sS641w05e8A_3fZfmzUEuULomQtwiPVWwF0H8bmQ0mn0jy9nhjpt0pKSS-xY8Fd3HDw0zQ8FA-DY94m4STLue1xXQSQKjXV83fygR-OKsKqpMz5e3CZDH-eiivONsrszqPh6ZyGPpRsjxZIf"/>
+</div>
+<div class="p-2 space-y-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Deluxe King Room</h3>
+<span class="text-label-caption font-label-caption text-secondary uppercase tracking-wider">Garden Terrace Access • King Bed</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary">From $120<span class="text-body-sm font-body-sm text-on-surface-variant font-normal">/night</span></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Generous 28 sqm sanctuary with king bed, individual climate control, work desk, private en-suite rainfall shower, and direct access to our garden courtyard.
+            </p>
+<div class="pt-4 border-t border-outline-variant/20 flex justify-between items-center">
+<span class="text-label-caption font-label-caption text-outline uppercase tracking-wider">Includes Breakfast & Wi-Fi</span>
+<a class="bg-primary text-surface-container-lowest px-6 py-2.5 text-label-md font-label-md uppercase tracking-wider hover:bg-secondary transition-colors" href="#contact" onclick="switchRoute('contact')">Reserve Room</a>
+</div>
+</div>
+</div>
+<!-- Room Card 2 -->
+<div class="bg-surface-container-lowest p-4 border border-outline-variant/30 editorial-shadow">
+<div class="h-80 w-full overflow-hidden bg-surface-variant mb-6">
+<img alt="Twin Deluxe Room" class="w-full h-full object-cover" data-alt="Twin bedroom suite with two comfortable single beds fitted with organic neutral linens, soft textured woven throw blankets, wooden shutters, and warm morning ambient light filtered through garden palms." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWc-2N82m3lL_TTeyES2cSvF8LVg5X7L7xyZEONUPqqmhzhUpLUxZcOMte0AKglq8rJUHdx6vnbWtixSPZjuHDTo8lcDTukj58VetZbjp5C5mdNo_tKCYSH9bK_-EY9Ieup4-JP6C99MbmwHTfFchUk8ojyxi3DRWNZnuypsIxP-g-STfKSLmM0SAEDxdlyt7N9qq1AtryF0AGOLYqiEhGeOLu7AE3UZ5wmxjy_Akf6dZc_ro5xA_P"/>
+</div>
+<div class="p-2 space-y-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Twin Deluxe Room</h3>
+<span class="text-label-caption font-label-caption text-secondary uppercase tracking-wider">Courtyard View • Two Twin Beds</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary">From $110<span class="text-body-sm font-body-sm text-on-surface-variant font-normal">/night</span></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Ideal for friends or dive buddies. Two plush twin beds, generous storage for dive luggage, air conditioning, daily room replenishment, and complimentary tea/coffee.
+            </p>
+<div class="pt-4 border-t border-outline-variant/20 flex justify-between items-center">
+<span class="text-label-caption font-label-caption text-outline uppercase tracking-wider">Includes Breakfast & Wi-Fi</span>
+<a class="bg-primary text-surface-container-lowest px-6 py-2.5 text-label-md font-label-md uppercase tracking-wider hover:bg-secondary transition-colors" href="#contact" onclick="switchRoute('contact')">Reserve Room</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== VIEW: EXPERIENCES ==================== -->
+<section class="route-view hidden py-space-xl md:py-space-2xl max-w-7xl mx-auto px-margin-mobile md:px-margin" id="view-experiences">
+<div class="mb-12 border-b border-outline-variant/30 pb-8">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest block mb-2">ATOLL EXCURSIONS</span>
+<h1 class="text-primary font-headline-lg text-headline-lg-mobile md:text-headline-lg">Beyond the Reef</h1>
+<p class="text-on-surface-variant font-body-md text-body-md max-w-2xl mt-4 leading-relaxed">
+          South Ari Atoll is world-famous as the home of resident whale sharks, oceanic manta rays, and thriving coral pinnacles. Let us arrange your excursions with certified local island partners.
+        </p>
+</div>
+<div class="space-y-12 mb-16">
+<!-- Experience Detail 1 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 bg-surface-container-lowest p-6 border border-outline-variant/30 items-center">
+<div class="lg:col-span-5 h-72 overflow-hidden bg-surface-variant">
+<img alt="Whale Shark Safari" class="w-full h-full object-cover" data-alt="A gentle whale shark swimming peacefully just below the surface of turquoise lagoon waters alongside a snorkeler maintaining a respectful distance in the Maldives. Soft tropical marine lighting and crystal clear waters." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpo7at4nstmu_OtXeK458YaSkhowD2pjgsQqrmql8WOcjOREvLfedOsCUwp4vubfB28HPR56_iJd0H1mPQGRHIYNAR9FuaMGyrlfnmSzwsqkDfepQw3tJR03zQrA_0QsM9zxGKBCCZwjkAJ5rB-DoUG-wMGp3LZFyIRyk1U1Q00jqlYK01ZPZzk2wDnUKcR7yU_NzEAKEhRAimSZxwQm-WOv0Lv4uP_tv9xlv1rcn05rsDtJXanRd9"/>
+</div>
+<div class="lg:col-span-7 space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">explore</span>
+<span class="text-label-caption font-label-caption text-secondary uppercase tracking-widest">SIGNATURE ADVENTURE</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Whale Shark Snorkeling Safari</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Venture along the outer rim of the South Ari Marine Protected Area (SAMPA). Our knowledgeable local crew knows the feeding currents and ensures responsible, quiet wildlife interactions following strict conservation codes.
+            </p>
+<div class="pt-2 flex items-center gap-6 text-label-md font-label-md text-primary">
+<span>DURATION: 3-4 HOURS</span>
+<span>•</span>
+<span>EQUIPMENT INCLUDED</span>
+</div>
+</div>
+</div>
+<!-- Experience Detail 2 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 bg-surface-container-lowest p-6 border border-outline-variant/30 items-center">
+<div class="lg:col-span-5 h-72 overflow-hidden bg-surface-variant">
+<img alt="Sandbank Excursion" class="w-full h-full object-cover" data-alt="An expansive deserted white sandbank surrounded by shallow crystal-clear turquoise waters in South Ari Atoll. A solitary umbrella and two beach towels under a vast blue sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV7Oy2NkwAySur1_MuwavKcAo1RCKUKmgqqHw5QhujX0Uz_GZNhBFoRl47pamsgCnD3pgMBOh1fpHa_dJWUOeBH738Xv51wD5GTB0E16keoY6kzZmT4SbRnf5wF6nJodJamB0_wFpATCw3zxwW4qnvY7hg8qj-Q1aWmOst7D2HfMU48b9OlK7WyF_eKLISVowfq_pNsoTT4XzMhUDYm4i_Az89LO_XtW-rFqPN4ztasdzaGvEFYtPH"/>
+</div>
+<div class="lg:col-span-7 space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">beach_access</span>
+<span class="text-label-caption font-label-caption text-secondary uppercase tracking-widest">ROMANTIC ESCAPE</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Sandbank Picnic & Lagoon Swim</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Board a traditional boat to an isolated offshore sandbank emerging from the ocean at low tide. Enjoy fresh tropical fruit, chilled refreshments, and unparalleled peace in the middle of the sea.
+            </p>
+<div class="pt-2 flex items-center gap-6 text-label-md font-label-md text-primary">
+<span>DURATION: HALF-DAY</span>
+<span>•</span>
+<span>LUNCH INCLUDED</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== VIEW: GALLERY ==================== -->
+<section class="route-view hidden py-space-xl md:py-space-2xl max-w-7xl mx-auto px-margin-mobile md:px-margin" id="view-gallery">
+<div class="mb-12 border-b border-outline-variant/30 pb-8">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest block mb-2">CURATED ARCHIVE</span>
+<h1 class="text-primary font-headline-lg text-headline-lg-mobile md:text-headline-lg">Visual Archive of Dhigurah</h1>
+<p class="text-on-surface-variant font-body-md text-body-md max-w-2xl mt-4 leading-relaxed">
+          Quiet corners, ocean transitions, and handcrafted details collected over seasons on the island.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+<div class="bg-surface-container-lowest p-3 editorial-shadow">
+<div class="h-80 overflow-hidden bg-surface-variant">
+<img alt="Island Boat" class="w-full h-full object-cover" data-alt="Traditional wooden Maldivian boat moored along the quiet coastline of Dhigurah island during golden hour with warm sunset reflections on calm water." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArc0jBLHMqSlYIto4kYtcA1xt5Fb3-_wKr7c8bb4aF-qeJvCsV2eQ-i3Yc6d-V5KfFEq8bNYOrmh3HPCV-7A3LUvK_83f1bKJ4i1Lj7OnciosoDgnSrFxUZUdpXh0kzq0yBox-rtCnkaynAeklC6YpM-xDt8mZRemvvmTS0sbDy40bZbXy-VKBUoQPZoXUbz9MZ6jMjT8L1q7cBE0nYLWzOd_8WJuCrV5P6uaQTElqYBDuRwPgqg6H"/>
+</div>
+<span class="pt-2 block font-label-caption text-label-caption text-on-surface-variant">LAGOON CRAFT</span>
+</div>
+<div class="bg-surface-container-lowest p-3 editorial-shadow">
+<div class="h-80 overflow-hidden bg-surface-variant">
+<img alt="Interior Detail" class="w-full h-full object-cover" data-alt="Crisp minimalist bed styling with light sand-colored linen throw, timber side table, and fresh tropical flower in a small ceramic dish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAixs4gOCvzInJTzJye6tf95nDv6CwGYgmopbC9liGsF-aRE-1lKp74nzbxEmPkjP5inRNxAsGiR67B9wSvYqPYw8iUoFF1mrZYTdqx5ZOBdiBWxx1-0eoJFDGc68WROHZvcwXrLFho5qjVx-GwHQVl_qafEJm40HnJxWM-keKvqZUwXkCxnFST1xThGfUaibFx53f6epPJiNujpSSBm74gl-3pDxdLqzyoT4Ua4D7jqkP0f5AvqzBb"/>
+</div>
+<span class="pt-2 block font-label-caption text-label-caption text-on-surface-variant">MINIMALIST BEDROOM</span>
+</div>
+<div class="bg-surface-container-lowest p-3 editorial-shadow">
+<div class="h-80 overflow-hidden bg-surface-variant">
+<img alt="Dhigurah Aerial" class="w-full h-full object-cover" data-alt="Aerial view of the long narrow strip of Dhigurah island showing dense green coconut palm forest flanked by white sand beach on both sides." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQlMhki-wXoCItFmqO-M5j0UrdXYHJ9ww-pOX8SRIIhwxfBsTUW3XOZVwg4QiHArhJfCGOFym7RI0-1hgP2W4-2ECWwfJp4LR6-meVS2RnoqbmYGsQ29yt1TnVozr6AgPyBTGeevc0DV4xTzQ3CdeS3tqqk_MGEbzAZFyouBF338QMUMcIXShH9OK-fj4v87YDoLIVTZroK-gG4NAQNz8DoZapnzNvMkSG_-QqgJfVpxeA8fBU4jzU"/>
+</div>
+<span class="pt-2 block font-label-caption text-label-caption text-on-surface-variant">ATOLL CONTOUR</span>
+</div>
+</div>
+</section>
+<!-- ==================== VIEW: ABOUT ==================== -->
+<section class="route-view hidden py-space-xl md:py-space-2xl max-w-7xl mx-auto px-margin-mobile md:px-margin" id="view-about">
+<div class="mb-12 border-b border-outline-variant/30 pb-8">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest block mb-2">OUR PHILOSOPHY</span>
+<h1 class="text-primary font-headline-lg text-headline-lg-mobile md:text-headline-lg">About Dhigurah Holidays</h1>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+<div class="lg:col-span-6 space-y-6 text-on-surface-variant font-body-md text-body-md leading-relaxed">
+<p class="font-headline-sm text-headline-sm text-primary leading-snug">
+            We believe the real charm of the Maldives belongs to its living local islands, where nature remains untamed and hospitality is personal.
+          </p>
+<p>
+            Dhigurah Holidays was founded to bridge understated modern comfort with authentic local encounters. Located in Dhigurah village, we invite travellers who seek meaningful connections: waking up to bird calls in the palm canopy, diving with majestic pelagic wildlife, and supporting the resident island economy directly.
+          </p>
+<p>
+            Our dedicated team lives right here on Dhigurah, eager to recommend quiet swim spots, arrange domestic sea-plane or boat connections from Malé, and ensure your stay is as carefree as the island breeze.
+          </p>
+</div>
+<div class="lg:col-span-6 bg-surface-container-lowest p-4 editorial-shadow">
+<div class="h-96 overflow-hidden bg-surface-variant">
+<img alt="Our Hospitality Team" class="w-full h-full object-cover" data-alt="Warm portrait of Maldivian island hosts welcoming guests with fresh king coconut water in a sunny tropical garden courtyard with lush leafy plants." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXO-2q45qJwH4BYl1IoB3yrUIKnKSDGJE1Mwm6h8SwZ18nAmokimGpKvNEusfhYJv_WaizewJ-XpKvHspV2iNF9RavD5vgq-ihHMgL2OJ5f-Hl3fYqt8w0fd140SZgZjQOVxvbB-6bwxRU_xEC8RPw5uy6RhOlSHP2lOlqZcUhCzDTHT1CoZ6tPQcUoRi8ghL3sF4wWCsOSUsu9_oibjJ9Lx0ip2lkc4UpXOxrfqisrriYVdoQuJrP"/>
+</div>
+<span class="pt-2 block font-label-caption text-label-caption text-on-surface-variant text-center">ISLAND STEWARDSHIP & HOSPITALITY</span>
+</div>
+</div>
+</section>
+<!-- ==================== VIEW: CONTACT / INQUIRY ==================== -->
+<section class="route-view hidden py-space-xl md:py-space-2xl max-w-7xl mx-auto px-margin-mobile md:px-margin" id="view-contact">
+<div class="mb-12 border-b border-outline-variant/30 pb-8">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest block mb-2">CONNECT WITH US</span>
+<h1 class="text-primary font-headline-lg text-headline-lg-mobile md:text-headline-lg">Plan Your Dhigurah Stay</h1>
+<p class="text-on-surface-variant font-body-md text-body-md max-w-2xl mt-4 leading-relaxed">
+          Have questions regarding transfer speedboats, excursion schedules, or specific room dates? Fill out our inquiry form or contact our island desk directly.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
+<!-- Form Container (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 border border-outline-variant/30 editorial-shadow">
+<form class="space-y-6" id="inquiry-form" onsubmit="handleInquirySubmit(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-label-caption font-label-caption uppercase tracking-wider text-outline mb-2">Full Name</label>
+<input class="w-full bg-surface-container-low border-0 border-b border-outline focus:ring-0 focus:border-primary py-3 px-2 text-body-md font-body-md text-on-surface" placeholder="Elena Vance" required="" type="text"/>
+</div>
+<div>
+<label class="block text-label-caption font-label-caption uppercase tracking-wider text-outline mb-2">Email Address</label>
+<input class="w-full bg-surface-container-low border-0 border-b border-outline focus:ring-0 focus:border-primary py-3 px-2 text-body-md font-body-md text-on-surface" placeholder="elena@example.com" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-label-caption font-label-caption uppercase tracking-wider text-outline mb-2">Target Check-In Date</label>
+<input class="w-full bg-surface-container-low border-0 border-b border-outline focus:ring-0 focus:border-primary py-3 px-2 text-body-md font-body-md text-on-surface" type="date"/>
+</div>
+<div>
+<label class="block text-label-caption font-label-caption uppercase tracking-wider text-outline mb-2">Number of Guests</label>
+<select class="w-full bg-surface-container-low border-0 border-b border-outline focus:ring-0 focus:border-primary py-3 px-2 text-body-md font-body-md text-on-surface">
+<option>1 Guest</option>
+<option selected="">2 Guests</option>
+<option>3 Guests</option>
+<option>4+ Guests (Group)</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-label-caption font-label-caption uppercase tracking-wider text-outline mb-2">Preferred Room Type</label>
+<select class="w-full bg-surface-container-low border-0 border-b border-outline focus:ring-0 focus:border-primary py-3 px-2 text-body-md font-body-md text-on-surface">
+<option>Deluxe King Room</option>
+<option>Twin Deluxe Room</option>
+<option>Entire Guesthouse Inquiry</option>
+</select>
+</div>
+<div>
+<label class="block text-label-caption font-label-caption uppercase tracking-wider text-outline mb-2">Your Message or Special Excursion Requests</label>
+<textarea class="w-full bg-surface-container-low border-0 border-b border-outline focus:ring-0 focus:border-primary py-3 px-2 text-body-md font-body-md text-on-surface" placeholder="Tell us if you need help with speed-boat transfers from Malé or whale-shark tour bookings..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary-container text-surface-container-lowest py-4 text-label-lg font-label-lg uppercase tracking-wider hover:bg-secondary transition-colors" type="submit">
+              SEND INQUIRY TO HOST
+            </button>
+<div class="hidden text-secondary font-label-md text-label-md text-center pt-2" id="form-feedback">
+              ✓ Thank you! Your inquiry has been sent to our island desk. We will respond within 12 hours.
+            </div>
+</form>
+</div>
+<!-- Direct Contact Information (5 Cols) -->
+<div class="lg:col-span-5 space-y-8">
+<div class="bg-surface-container p-6 border-l-2 border-primary space-y-3">
+<span class="text-label-caption font-label-caption uppercase tracking-widest text-secondary block">LOCATION</span>
+<h4 class="font-headline-sm text-headline-sm text-primary">Dhigurah Holidays Guesthouse</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Kaluhoh koaru hingun,<br/>
+              Dhigurah 00070,<br/>
+              South Ari Atoll, Maldives
+            </p>
+</div>
+<div class="bg-surface-container p-6 border-l-2 border-primary space-y-3">
+<span class="text-label-caption font-label-caption uppercase tracking-widest text-secondary block">DIRECT DESK & WHATSAPP</span>
+<p class="font-headline-sm text-headline-sm text-primary">
+<a class="hover:text-secondary transition-colors" href="tel:+9607774749">+960 777-4749</a>
+</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Available 7 days a week, 08:00 – 21:00 (Maldives Local Time, UTC+5)
+            </p>
+</div>
+<div class="bg-surface-container p-6 border-l-2 border-primary space-y-3">
+<span class="text-label-caption font-label-caption uppercase tracking-widest text-secondary block">TRANSFERS TO DHIGURAH</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Scheduled speedboat departs daily from Malé Airport direct to Dhigurah harbor (approx. 1h 45m). Flyme domestic flights operate between Velana International (MLE) and nearby Maamigili (VAM) with 20-minute boat connection.
+            </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ==================== EDITORIAL FOOTER ==================== -->
+<footer class="bg-surface-container border-t border-outline-variant/40">
+<div class="w-full px-margin-mobile md:px-margin py-space-xl md:py-space-2xl max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-outline-variant/30">
+<!-- Brand Summary (5 Cols) -->
+<div class="md:col-span-5 space-y-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">spa</span>
+<span class="text-headline-md font-headline-md font-medium text-primary tracking-wide">DHIGURAH HOLIDAYS</span>
+</div>
+<p class="text-on-surface-variant font-body-sm text-body-sm leading-relaxed max-w-sm">
+            An intimate boutique island refuge on Dhigurah Island in the Maldives. Dedicated to unhurried pace, marine stewardship, and genuine Maldivian warmth.
+          </p>
+<div class="pt-2 text-label-caption font-label-caption text-outline uppercase tracking-wider">
+            SOUTH ARI ATOLL • REEF CONSERVATION AREA
+          </div>
+</div>
+<!-- Navigation Links (3 Cols) -->
+<div class="md:col-span-3 space-y-3">
+<span class="text-label-caption font-label-caption uppercase tracking-wider text-primary font-semibold block mb-2">EXPLORE</span>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant text-body-sm font-body-sm hover:text-primary transition-colors" href="#rooms" onclick="switchRoute('rooms')">Rooms</a></li>
+<li><a class="text-on-surface-variant text-body-sm font-body-sm hover:text-primary transition-colors" href="#experiences" onclick="switchRoute('experiences')">Experiences</a></li>
+<li><a class="text-on-surface-variant text-body-sm font-body-sm hover:text-primary transition-colors" href="#gallery" onclick="switchRoute('gallery')">Gallery</a></li>
+<li><a class="text-on-surface-variant text-body-sm font-body-sm hover:text-primary transition-colors" href="#about" onclick="switchRoute('about')">About</a></li>
+<li><a class="text-on-surface-variant text-body-sm font-body-sm hover:text-primary transition-colors" href="#contact" onclick="switchRoute('contact')">Contact</a></li>
+</ul>
+</div>
+<!-- Location Information (4 Cols) -->
+<div class="md:col-span-4 space-y-3">
+<span class="text-label-caption font-label-caption uppercase tracking-wider text-primary font-semibold block mb-2">ISLAND ADDRESS</span>
+<p class="text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+            Kaluhoh koaru hingun,<br/>
+            Dhigurah 00070, South Ari Atoll,<br/>
+            Maldives
+          </p>
+<p class="text-primary font-body-sm font-body-sm pt-2">
+<strong>Inquiries:</strong> +960 777-4749
+          </p>
+</div>
+</div>
+<!-- Copyright & Bottom Editorial Microcopy -->
+<div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-on-surface-variant text-body-sm font-body-sm">
+<p>© 2025 Dhigurah Holidays, South Ari Atoll, Maldives. All rights reserved.</p>
+<div class="flex items-center space-x-6 text-label-caption font-label-caption uppercase tracking-wider">
+<a class="hover:text-primary transition-colors" href="#about" onclick="switchRoute('about')">Island Guide</a>
+<span>•</span>
+<a class="hover:text-primary transition-colors" href="#about" onclick="switchRoute('about')">Sustainability</a>
+<span>•</span>
+<a class="hover:text-primary transition-colors" href="#contact" onclick="switchRoute('contact')">Terms of Stay</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- ==================== CLIENT INTERACTION ROUTER ==================== -->
+<script>
+    // Route state switcher
+    function switchRoute(routeId) {
+      const views = document.querySelectorAll('.route-view');
+      views.forEach(v => v.classList.add('hidden'));
+
+      const targetView = document.getElementById('view-' + routeId);
+      if (targetView) {
+        targetView.classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      // Update Nav active indicator
+      const navLinks = document.querySelectorAll('.nav-item');
+      navLinks.forEach(link => {
+        if (link.getAttribute('data-route') === routeId) {
+          link.classList.remove('text-on-surface-variant');
+          link.classList.add('text-primary', 'border-b', 'border-primary', 'pb-1', 'font-semibold');
+        } else {
+          link.classList.remove('text-primary', 'border-b', 'border-primary', 'pb-1', 'font-semibold');
+          link.classList.add('text-on-surface-variant');
+        }
+      });
+
+      // Update URL Hash without reload
+      if (history.pushState) {
+        history.pushState(null, null, '#' + routeId);
+      } else {
+        location.hash = '#' + routeId;
+      }
+    }
+
+    // Mobile Menu Toggle
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      if (menu) {
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('flex');
+      }
+    }
+
+    document.getElementById('mobile-toggle').addEventListener('click', toggleMenu);
+
+    // Initial Hash Check
+    window.addEventListener('DOMContentLoaded', () => {
+      const initialHash = window.location.hash.replace('#', '');
+      if (initialHash && ['home', 'rooms', 'experiences', 'gallery', 'about', 'contact'].includes(initialHash)) {
+        switchRoute(initialHash);
+      } else {
+        switchRoute('home');
+      }
+    });
+
+    // Form submission feedback simulation
+    function handleInquirySubmit(e) {
+      e.preventDefault();
+      const feedback = document.getElementById('form-feedback');
+      if (feedback) {
+        feedback.classList.remove('hidden');
+        e.target.reset();
+      }
+    }
+  </script>
+</body></html>

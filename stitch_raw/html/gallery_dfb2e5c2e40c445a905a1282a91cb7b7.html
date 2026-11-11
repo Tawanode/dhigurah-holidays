@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallery — Dhigurah Holidays, Maldives</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration verbatim from instructions -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary": "#ffffff",
+            "on-secondary-fixed-variant": "#00513f",
+            "surface": "#f6fbf4",
+            "surface-dim": "#d7dbd5",
+            "tertiary-fixed-dim": "#8ecff0",
+            "surface-variant": "#dfe4dd",
+            "on-secondary-fixed": "#002117",
+            "on-primary-container": "#7ca89d",
+            "on-tertiary-container": "#66a7c6",
+            "inverse-primary": "#a3d0c4",
+            "on-tertiary-fixed": "#001f2b",
+            "on-error": "#ffffff",
+            "surface-container-low": "#f0f5ee",
+            "on-tertiary-fixed-variant": "#004d65",
+            "background": "#f6fbf4",
+            "inverse-on-surface": "#eef2eb",
+            "surface-container-lowest": "#ffffff",
+            "primary": "#002620",
+            "on-primary-fixed-variant": "#234e45",
+            "tertiary-fixed": "#bfe8ff",
+            "surface-bright": "#f6fbf4",
+            "outline-variant": "#c0c8c5",
+            "surface-container-high": "#e5e9e3",
+            "secondary-container": "#a4f2d6",
+            "outline": "#717976",
+            "secondary-fixed": "#a4f2d6",
+            "error": "#ba1a1a",
+            "secondary-fixed-dim": "#89d5ba",
+            "primary-container": "#103d35",
+            "on-error-container": "#93000a",
+            "error-container": "#ffdad6",
+            "on-surface-variant": "#404846",
+            "surface-container": "#ebefe9",
+            "surface-container-highest": "#dfe4dd",
+            "surface-tint": "#3c665d",
+            "on-tertiary": "#ffffff",
+            "on-secondary-container": "#1f715a",
+            "on-background": "#181d19",
+            "on-primary-fixed": "#00201b",
+            "primary-fixed-dim": "#a3d0c4",
+            "tertiary-container": "#003b4f",
+            "primary-fixed": "#bfece0",
+            "tertiary": "#002432",
+            "secondary": "#166b55",
+            "inverse-surface": "#2d322d",
+            "on-primary": "#ffffff",
+            "on-surface": "#181d19"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.375rem",
+            "margin": "4rem",
+            "margin-mobile": "1.25rem",
+            "space-sm": "0.75rem",
+            "space-xl": "3.5rem",
+            "space-md": "1.25rem",
+            "gutter": "2rem",
+            "space-3xl": "8rem",
+            "space-2xl": "5.5rem",
+            "gutter-mobile": "1rem",
+            "space-lg": "2.25rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "display-lg-mobile": ["Playfair Display"],
+            "body-sm": ["Manrope"],
+            "headline-sm": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "label-md": ["Manrope"],
+            "display-md-mobile": ["Playfair Display"],
+            "body-lg": ["Manrope"],
+            "display-lg": ["Playfair Display"],
+            "title-editorial": ["Playfair Display"],
+            "body-md": ["Manrope"],
+            "label-lg": ["Manrope"],
+            "label-caption": ["Manrope"],
+            "display-md": ["Playfair Display"]
+          },
+          "fontSize": {
+            "headline-lg": ["2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-md": ["1.875rem", { "lineHeight": "2.375rem", "fontWeight": "500" }],
+            "display-lg-mobile": ["2.75rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }],
+            "headline-sm": ["1.375rem", { "lineHeight": "1.875rem", "fontWeight": "600" }],
+            "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "500" }],
+            "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "display-md-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.875rem", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "display-lg": ["4.5rem", { "lineHeight": "5rem", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "title-editorial": ["1.5rem", { "lineHeight": "2.25rem", "fontWeight": "400" }],
+            "body-md": ["1rem", { "lineHeight": "1.625rem", "fontWeight": "400" }],
+            "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "label-caption": ["0.6875rem", { "lineHeight": "0.9375rem", "letterSpacing": "0.05em", "fontWeight": "500" }],
+            "display-md": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.015em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+    }
+    .passe-partout {
+      box-shadow: 0 20px 40px -15px rgba(16, 61, 53, 0.08);
+    }
+    .slight-tilt-l {
+      transform: rotate(-0.85deg);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+    }
+    .slight-tilt-l:hover {
+      transform: rotate(0deg) scale(1.01);
+      box-shadow: 0 24px 48px -12px rgba(16, 61, 53, 0.14);
+    }
+    .slight-tilt-r {
+      transform: rotate(0.85deg);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+    }
+    .slight-tilt-r:hover {
+      transform: rotate(0deg) scale(1.01);
+      box-shadow: 0 24px 48px -12px rgba(16, 61, 53, 0.14);
+    }
+    .natural-hover {
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+    }
+    .natural-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 24px 48px -12px rgba(16, 61, 53, 0.14);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-secondary-container selection:text-primary">
+<!-- ========================================================================= -->
+<!-- SHARED TOPNAVBAR (Strict execution of Shared Components JSON)           -->
+<!-- ========================================================================= -->
+<header class="docked full-width top-0 z-50 fixed w-full bg-surface-container-lowest/90 dark:bg-primary-container/90 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin py-4 md:py-6 max-w-7xl mx-auto">
+<!-- Brand Logo / Product Name from JSON -->
+<a class="text-headline-sm font-headline-sm font-semibold tracking-wider text-primary dark:text-inverse-primary focus:outline-none" href="#">
+        DHIGURAH HOLIDAYS
+      </a>
+<!-- Desktop Nav Links (JSON: ["Rooms", "Experiences", "Gallery", "About", "Contact"]) -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-label-md font-label-md uppercase tracking-widest text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#rooms">
+          Rooms
+        </a>
+<a class="text-label-md font-label-md uppercase tracking-widest text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#experiences">
+          Experiences
+        </a>
+<!-- ACTIVE LINK: Gallery -->
+<a class="text-label-md font-label-md uppercase tracking-widest text-primary dark:text-inverse-primary border-b border-primary dark:border-inverse-primary pb-1 font-semibold" href="#gallery">
+          Gallery
+        </a>
+<a class="text-label-md font-label-md uppercase tracking-widest text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#about">
+          About
+        </a>
+<a class="text-label-md font-label-md uppercase tracking-widest text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#contact">
+          Contact
+        </a>
+</nav>
+<!-- Trailing Action: "MAKE AN INQUIRY" -->
+<div class="flex items-center space-x-4">
+<a class="inline-flex items-center justify-center bg-primary text-on-primary hover:bg-secondary px-6 md:px-8 py-3 text-label-lg font-label-lg uppercase tracking-wider transition-all duration-200 rounded-none shadow-sm hover:shadow" href="#inquiry">
+          MAKE AN INQUIRY
+        </a>
+</div>
+</div>
+</header>
+<!-- Spacer to account for fixed navbar -->
+<div class="h-20 md:h-28"></div>
+<main>
+<!-- ========================================================================= -->
+<!-- 1. HERO SECTION                                                           -->
+<!-- ========================================================================= -->
+<section class="w-full px-margin-mobile md:px-margin pt-space-lg md:pt-space-xl pb-space-lg max-w-7xl mx-auto">
+<div class="max-w-4xl">
+<!-- Eyebrow -->
+<div class="flex items-center space-x-3 mb-4">
+<span class="w-6 h-[1px] bg-secondary"></span>
+<span class="text-label-md font-label-md uppercase tracking-widest text-secondary">
+            VISUAL ARCHIVE &amp; ISLAND JOURNAL
+          </span>
+</div>
+<!-- Headline -->
+<h1 class="font-headline-lg text-headline-lg md:font-display-lg md:text-display-lg text-primary tracking-tight mb-6">
+          Dhigurah, Through Our Eyes
+        </h1>
+<!-- Supporting Copy -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          A closer look at the rooms, tropical surroundings, beaches, and adventures that shape a stay on the island.
+        </p>
+</div>
+<!-- Atmospheric metadata strip (Print-style editorial pagination tag) -->
+<div class="mt-8 pt-4 border-t border-outline-variant/30 flex flex-wrap items-center justify-between gap-4 text-label-caption font-label-caption uppercase tracking-wider text-outline">
+<div class="flex items-center space-x-6">
+<span>COORDINATES: 3°31′N 72°55′E</span>
+<span class="hidden sm:inline">•</span>
+<span class="hidden sm:inline">SOUTH ARI ATOLL</span>
+<span class="hidden md:inline">•</span>
+<span class="hidden md:inline">MALDIVES ARCHIVE VOL. IV</span>
+</div>
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>
+<span>18 CURATED PLATES</span>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 2. INTERACTIVE CATEGORY FILTER BAR                                        -->
+<!-- ========================================================================= -->
+<section class="sticky top-[69px] md:top-[85px] z-40 bg-background/95 backdrop-blur-md border-y border-outline-variant/30 py-4 mb-space-xl">
+<div class="w-full px-margin-mobile md:px-margin max-w-7xl mx-auto flex items-center justify-between overflow-x-auto no-scrollbar">
+<!-- Filter Tabs / Pills -->
+<div class="flex items-center space-x-2 sm:space-x-3 min-w-max" id="gallery-filters" role="tablist">
+<button class="filter-btn px-4 py-2 text-label-md font-label-md uppercase tracking-wider bg-primary text-on-primary border border-primary transition-all duration-200" data-filter="all">
+            All Photos
+          </button>
+<button class="filter-btn px-4 py-2 text-label-md font-label-md uppercase tracking-wider bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container border border-outline-variant/40 transition-all duration-200" data-filter="guesthouse">
+            Guesthouse
+          </button>
+<button class="filter-btn px-4 py-2 text-label-md font-label-md uppercase tracking-wider bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container border border-outline-variant/40 transition-all duration-200" data-filter="rooms">
+            Rooms
+          </button>
+<button class="filter-btn px-4 py-2 text-label-md font-label-md uppercase tracking-wider bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container border border-outline-variant/40 transition-all duration-200" data-filter="beaches">
+            Beaches
+          </button>
+<button class="filter-btn px-4 py-2 text-label-md font-label-md uppercase tracking-wider bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container border border-outline-variant/40 transition-all duration-200" data-filter="island-life">
+            Island Life
+          </button>
+<button class="filter-btn px-4 py-2 text-label-md font-label-md uppercase tracking-wider bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container border border-outline-variant/40 transition-all duration-200" data-filter="marine-experiences">
+            Marine Experiences
+          </button>
+</div>
+<div class="hidden lg:flex items-center space-x-2 text-label-caption font-label-caption uppercase tracking-wider text-outline pl-6 border-l border-outline-variant/30">
+<span>SORT: CURATED SEQUENCE</span>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 3. CURATED EDITORIAL ASYMMETRICAL & MASONRY PHOTO GRID                    -->
+<!-- ========================================================================= -->
+<section class="w-full px-margin-mobile md:px-margin max-w-7xl mx-auto pb-space-3xl">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12" id="gallery-grid">
+<!-- ITEM 01: Hero Guesthouse Dusk (Spans 8 cols) -->
+<article class="gallery-item md:col-span-8 group passe-partout bg-surface-container-lowest p-3 sm:p-4 border border-outline-variant/40 slight-tilt-l" data-category="guesthouse">
+<div class="relative overflow-hidden aspect-[16/10] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Dusk photograph of Dhigurah Holidays boutique retreat exterior in the Maldives, showing contemporary whitewashed coral walls, handcrafted teak louvers, and warm amber lantern lighting softly glowing amid lush banana palms and tropical foliage under an indigo twilight sky. The architecture embodies calm minimalist luxury and organic coastal materiality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiBDgM6XzW0BGsTs401s4JyqwlIi57IZbikaegPg0zf-PK2xpunqc_vUcTMa8iG-lEEruIYgO7CEkd8JekKD2bnFrW24MWdB5mHUpdyIvsCaWYdilN51I-B_Pv6pqsUdQvtfv4elfH1US4udXixDVQY42fSXP1xswbJF53B2x_vNjQiuZoSksbuh8-YcG33IjkegsYM7QzPjgzCo13l4VvBXu9Z9cBaKMiaBQWtSDd_qgWNKQqhxPv"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-on-primary font-body-sm text-body-sm tracking-wide">Plate No. 01 — Twilight at Dhigurah Holidays Sanctuary</span>
+</div>
+</div>
+<div class="mt-4 pb-2 px-1 flex items-baseline justify-between">
+<div>
+<span class="text-label-caption font-label-caption uppercase tracking-wider text-secondary">ARCHIVE 01 / GUESTHOUSE</span>
+<h2 class="font-headline-sm text-headline-sm text-primary mt-0.5">Sanctuary at Dusk</h2>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant italic font-headline-sm hidden sm:block">Warm teak and twilight glow</p>
+</div>
+</article>
+<!-- ITEM 02: Breezy Bedroom Interiors with washed linen (Spans 4 cols, Portrait) -->
+<article class="gallery-item md:col-span-4 group passe-partout bg-surface-container-lowest p-3 sm:p-4 border border-outline-variant/40 natural-hover" data-category="rooms">
+<div class="relative overflow-hidden aspect-[3/4] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Intimate editorial room interior photograph featuring an artisanal king bed draped in crisp unbleached sand-toned linen and lightweight organic cotton throws. Natural tropical breeze billows soft sheer ivory curtains, while gentle daylight casts diagonal slatted leaf shadows across polished lime-plaster surfaces in an unhurried, peaceful atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1kjUPs-UzHIMRc4KR8spGFe3VAGoG8tJ4l1rfRoF4VIDiDd5eoQeoueTc4o1LpjGmmY9NAqK5EntR-0jEPuat0tPrIL-5ZhbPACSIOD3bJVVuFvqptV66JcUBQbprt-zrvTj0_22xYKjnKs_Y31tUWmb3njiDb8Xf6XAsEiLMZRDgFrW4_lWMsSw4k39UkUvg7EAVgoJz3s4kjtTDFiKd1jvhtToDA8QIDAArgE24T8LjRrmJXa7U"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-on-primary font-body-sm text-body-sm tracking-wide">Plate No. 02 — King Suite with Washed Linens</span>
+</div>
+</div>
+<div class="mt-4 pb-2 px-1 flex items-baseline justify-between">
+<div>
+<span class="text-label-caption font-label-caption uppercase tracking-wider text-secondary">ARCHIVE 02 / ROOMS</span>
+<h2 class="font-headline-sm text-headline-sm text-primary mt-0.5">Deluxe Garden Suite</h2>
+</div>
+<span class="text-label-caption font-label-caption text-outline">NATURAL LIGHT</span>
+</div>
+</article>
+<!-- ITEM 03: Wild Whale Shark in South Ari Waters (Spans 5 cols, Portrait/Square-ish) -->
+<article class="gallery-item md:col-span-5 group passe-partout bg-surface-container-lowest p-3 sm:p-4 border border-outline-variant/40 natural-hover" data-category="marine-experiences">
+<div class="relative overflow-hidden aspect-[4/5] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Majestic underwater photography of a gentle giant whale shark gliding gracefully through crystal clear sapphire and turquoise waters of South Ari Atoll Maldives. Ethereal sun rays illuminate its distinctive star-like patterned dorsal skin and white spots in the deep quiet ocean realm, conveying calm majesty and awe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtEXqTa347pjkT7zzZkpN1wfzPzfnKRV88nBigdnaxXpKeD9I1UsDxyFzZdRm2DLSHPsnFKkMhvy5lsX6HoQdnQNOweC6hX_fVKnZ_y1uMQMvfH-rOeuIGpSezfo4gRXrcScTZRcr_e_x8e6O8pQmJ_y746-YuHQ5TgNAg3K52lYZJxZfkWeiRuPVKJq59x6r3NF8rvvGtlrGX0zpPsed1LOMw2lmoTnLmL2u650UdWZ3PlSvbKpWC"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-on-primary font-body-sm text-body-sm tracking-wide">Plate No. 03 — Resident Whale Shark Encounter, SAMPA</span>
+</div>
+</div>
+<div class="mt-4 pb-2 px-1 flex items-baseline justify-between">
+<div>
+<span class="text-label-caption font-label-caption uppercase tracking-wider text-secondary">ARCHIVE 03 / MARINE</span>
+<h2 class="font-headline-sm text-headline-sm text-primary mt-0.5">South Ari Ocean Giant</h2>
+</div>
+<span class="text-label-caption font-label-caption text-outline">WILD ENCOUNTER</span>
+</div>
+</article>
+<!-- ITEM 04: Pristine Turquoise Sandbank (Spans 7 cols, Panoramic Editorial 16:9) -->
+<article class="gallery-item md:col-span-7 group passe-partout bg-surface-container-lowest p-3 sm:p-4 border border-outline-variant/40 slight-tilt-r" data-category="beaches">
+<div class="relative overflow-hidden aspect-[16/9] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Breathtaking wide panoramic landscape of the famous Dhigurah sandbank stretching towards the horizon, where endless white coral powder sand meets shallow translucent turquoise lagoons and cerulean ocean gradients under bright tropical sunshine. Two lone palm fronds rest on the water's edge in pure untouched serenity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGn-TIhNBQS-o30iFsZVK3nCtuwiET1KniLmHGygAN7ETYpWR8xWhEziD_CvjOJkb7BZwYjfOsR3NYVQA8kcwvajgErzPYfg7s9AWoz7TY4iYdsNNDJmQoJX8-FNECvn1Np3z5UmAZAcNoWl8qc3r6nNxgyjWd82e2BKbvPEMuHghMnLRuEYZzgzFVfZDFT-yFn-u2neayNY3C0BdjYkz7MXGbgg9z_4uPiMpWMgqw0qMW-x3paSOM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-on-primary font-body-sm text-body-sm tracking-wide">Plate No. 04 — Endless Southern Sandbank Spit</span>
+</div>
+</div>
+<div class="mt-4 pb-2 px-1 flex items-baseline justify-between">
+<div>
+<span class="text-label-caption font-label-caption uppercase tracking-wider text-secondary">ARCHIVE 04 / BEACHES</span>
+<h2 class="font-headline-sm text-headline-sm text-primary mt-0.5">The Infinite Sandbank</h2>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant italic font-headline-sm hidden sm:block">Where sand dissolves into sea</p>
+</div>
+</article>
+<!-- ITEM 05: Open-Air Stone and Wood Ensuite Bathroom (Spans 4 cols, 1:1 Square) -->
+<article class="gallery-item md:col-span-4 group passe-partout bg-surface-container-lowest p-3 sm:p-4 border border-outline-variant/40 natural-hover" data-category="rooms">
+<div class="relative overflow-hidden aspect-square bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Editorial bathroom interior photo showing an open-air stone and reclaimed timber outdoor ensuite shower framed by smooth river pebbles, monstera foliage, and tropical fern plants. A brass rain shower fixture catches warm natural sunlight against charcoal textured stone walls, evoking barefoot luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABCmNHYp5v1FeUEZErMsmfyvF0MpoEDCwVhry7FHbHT2kDtZSMjcBctWPXCqa68XaJpqw6zIbgValaaa3j_oJd__K1k_yEqF_oIhv1kZsZFReQeC3P0jMyGGIgwNQ6V-F06KpZIkw7oPNULaH6j3ku_GqZxPlBVyZsqi4o_J1Nj0K-UesKaEns8UL-cSUtrF0WWfu9AQrZxPVIH6-wiER_6DLBCAO-2uNxbhmJ_DbaWEewAl0B0tgb"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-on-primary font-body-sm text-body-sm tracking-wide">Plate No. 05 — Open-Sky Stone Rain Shower</span>
+</div>
+</div>
+<div class="mt-4 pb-2 px-1 flex items-baseline justify-between">
+<div>
+<span class="text-label-caption font-label-caption uppercase tracking-wider text-secondary">ARCHIVE 05 / ROOMS</span>
+<h2 class="font-headline-sm text-headline-sm text-primary mt-0.5">Open-Air Bath Enclave</h2>
+</div>
+<span class="text-label-caption font-label-caption text-outline">OUTDOOR SHOWER</span>
+</div>
+</article>
+<!-- ITEM 06: Sunlit Courtyard Garden with Frangipani (Spans 4 cols, 1:1 Square) -->
+<article class="gallery-item md:col-span-4 group passe-partout bg-surface-container-lowest p-3 sm:p-4 border border-outline-variant/40 natural-hover" data-category="guesthouse">
+<div class="relative overflow-hidden aspect-square bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Sunlit courtyard garden photograph at Dhigurah Holidays with blooming white and yellow frangipani blossoms scattered across smooth sandy pavers. Handwoven rattan armchairs and a low wooden table sit peacefully beneath the shade of tropical breadfruit and banana leaves in soft midday light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzb46_wfqnImBYdv7PSRglDf25qZDBWkzhVJR_eNBVZIz6ELqHs6AYF1ShoCSI2AS5LtXnEiIcu_7sjTygzTdGUepvOqAwRujd6BCtbETS0EfCw9F7SwYZmijyxcsiR5oWupknqS6LVCt5eo0MoDq5RKJAIo37ksyx0ldKeAUvEoOUtqfFJaK9dz2tfHgESogbz626FxbJMmOYHUoyauCe5xfbQgs-tafFu0meTWagRLIlOmfJAycX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-on-primary font-body-sm text-body-sm tracking-wide">Plate No. 06 — Frangipani Courtyard at Midday</span>
+</div>
+</div>
+<div class="mt-4 pb-2 px-1 flex items-baseline justify-between">
+<div>
+<span class="text-label-caption font-label-caption uppercase tracking-wider text-secondary">ARCHIVE 06 / GUESTHOUSE</span>
+<h2 class="font-headline-sm text-headline-sm text-primary mt-0.5">Inner Frangipani Garden</h2>
+</div>
+<span class="text-label-caption font-label-caption text-outline">ATELIER COURTYARD</span>
+</div>
+</article>
+<!-- ITEM 07: Traditional Bicycle leaned against Coconut Palm (Spans 4 cols, 1:1 Square) -->
+<article class="gallery-item md:col-span-4 group passe-partout bg-surface-container-lowest p-3 sm:p-4 border border-outline-variant/40 slight-tilt-l" data-category="island-life">
+<div class="relative overflow-hidden aspect-square bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Charming island life snapshot of a vintage sea-green cruiser bicycle with a woven cane front basket leaned against a weathered coconut palm trunk on an unpaved white sand lane in Dhigurah village. Dappled shadows dance on the powdery lane under towering tropical palm fronds." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlPk60ShNm4LlxDNlXUs4XdzyY7rL_210t0BIqdfiUBMfAG6TA8qxuu03RTKq4XQgS_fU0VyX2ZW_ldxV_Wg5WecQ0iY0sgYzihFnboq9uEudEAEvP2ALp50SKOKTC1_vWWDCWOLRd6-XAHNeFKvBJx7ABBtEDD0UACk4pEx3F2KaVYRUDmh0hGMx3II2c0q5DL4KOVcLFU182C4MmIWUMKSFx0UDTFoVbpqGPtQ9SMZVRfw8Wf-M2"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-on-primary font-body-sm text-body-sm tracking-wide">Plate No. 07 — Sandy Lane Morning Commute</span>
+</div>
+</div>
+<div class="mt-4 pb-2 px-1 flex items-baseline justify-between">
+<div>
+<span class="text-label-caption font-label-caption uppercase tracking-wider text-secondary">ARCHIVE 07 / ISLAND LIFE</span>
+<h2 class="font-headline-sm text-headline-sm text-primary mt-0.5">Village Sand Path</h2>
+</div>
+<span class="text-label-caption font-label-caption text-outline">SLOW TRANSIT</span>
+</div>
+</article>
+<!-- ITEM 08: Green Turtle over Coral Garden (Spans 6 cols, 4:3 Aspect) -->
+<article class="gallery-item md:col-span-6 group passe-partout bg-surface-container-lowest p-3 sm:p-4 border border-outline-variant/40 natural-hover" data-category="marine-experiences">
+<div class="relative overflow-hidden aspect-[4/3] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Vivid close-up underwater photograph of an endangered green sea turtle peacefully grazing among flourishing brain corals and soft lavender reef sea fans in the shallow house reef of Dhigurah. Shimmering turquoise sea surface reflections create rhythmic caustic light patterns across its patterned shell." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANgPgiaRKu941wesxlT95RxvpZ0G8_AHqmcfnlC1GmC_mR2fTNBgd96t07g2uepd0hl3OZKjWgtLfMg4CqrmfC2VfcJNV9zC1Z8IXOXvOCMdOHpjzARFKxHepmSYa1VmzglRBW-r1OYx6U3JIQ3AD4raCPmu4bo3uXM8v2JN7EoQFEbTnlDbm0D8LT-gdTYLX497gmbmUrnEBpIdXsfZlQbixFAeYwxIDK_3J39uo8nWZbqqvF0keY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-on-primary font-body-sm text-body-sm tracking-wide">Plate No. 08 — Reef Turtle Foraging in House Lagoon</span>
+</div>
+</div>
+<div class="mt-4 pb-2 px-1 flex items-baseline justify-between">
+<div>
+<span class="text-label-caption font-label-caption uppercase tracking-wider text-secondary">ARCHIVE 08 / MARINE</span>
+<h2 class="font-headline-sm text-headline-sm text-primary mt-0.5">The Lagoon Grazer</h2>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant italic font-headline-sm hidden sm:block">House reef marine sanctuary</p>
+</div>
+</article>
+<!-- ITEM 09: Wooden Dhoni Boat on Calm Lagoon (Spans 6 cols, 4:3 Aspect) -->
+<article class="gallery-item md:col-span-6 group passe-partout bg-surface-container-lowest p-3 sm:p-4 border border-outline-variant/40 slight-tilt-r" data-category="island-life">
+<div class="relative overflow-hidden aspect-[4/3] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Handcrafted traditional wooden Maldivian dhoni boat anchored peacefully in calm mirror-like lagoon water during golden hour. The boat's curved wooden prow casts a crisp reflection on the pastel turquoise and peach tinted water, with distant coconut palm coastlines lining the far horizon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV2OP5-cypj1QMljzcB_Lk4LYudNjgxcBJQ1qG2X-6OtDkyCtjMEVCTBqKj1XtB-1UpZ9jdIQhHQvlYKTwlKB3h0EOBTusmmk_lmzjuzZhKLNY6uVRo5AT4PJpxzCs0B7dUK5_dAny33oJEOJjvnW6u41bMiIkY2Oh31K7MHJX84JlGELBCEzCHvgpB6LQ-kJyhByEu4fm5hAyuygwZYpp358GTbVQlzMtmdHDH-uAjhF7MbSyn84i"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-on-primary font-body-sm text-body-sm tracking-wide">Plate No. 09 — Sunset Dhoni Returning from Outer Reef</span>
+</div>
+</div>
+<div class="mt-4 pb-2 px-1 flex items-baseline justify-between">
+<div>
+<span class="text-label-caption font-label-caption uppercase tracking-wider text-secondary">ARCHIVE 09 / ISLAND LIFE</span>
+<h2 class="font-headline-sm text-headline-sm text-primary mt-0.5">The Traditional Dhoni</h2>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant italic font-headline-sm hidden sm:block">Seafaring heritage since 1974</p>
+</div>
+</article>
+</div>
+<!-- Pagination / Archival Counter -->
+<div class="mt-16 flex flex-col sm:flex-row items-center justify-between border-t border-outline-variant/30 pt-8 gap-4">
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+          Showing <span class="font-semibold text-primary">09</span> of <span class="font-semibold text-primary">18</span> curated editorial photographs
+        </p>
+<button class="inline-flex items-center space-x-2 text-label-lg font-label-lg uppercase tracking-wider text-primary hover:text-secondary border-b-2 border-primary hover:border-secondary pb-1 transition-all" id="load-more-btn">
+<span>VIEW ADDITIONAL ARCHIVE PLATES</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</button>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 4. EDITORIAL INQUIRY BANNER                                               -->
+<!-- ========================================================================= -->
+<section class="w-full bg-surface-container py-space-2xl md:py-space-3xl border-y border-outline-variant/40" id="inquiry">
+<div class="w-full px-margin-mobile md:px-margin max-w-5xl mx-auto text-center">
+<!-- Botanical Index Icon -->
+<div class="inline-flex items-center justify-center w-12 h-12 mb-6 rounded-none bg-surface-container-lowest border border-outline-variant/40 text-primary">
+<span class="material-symbols-outlined text-[24px]">spa</span>
+</div>
+<p class="text-label-md font-label-md uppercase tracking-widest text-secondary mb-3">
+          YOUR JOURNEY TO SOUTH ARI
+        </p>
+<h2 class="font-headline-lg text-headline-lg md:font-display-md md:text-display-md text-primary max-w-2xl mx-auto leading-tight mb-6">
+          Drawn to the island rhythm? Inquire about reserving your dates with us.
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mb-10">
+          Our hosts are at your disposal to arrange bespoke transfers, room pairings, ocean excursions, and unhurried culinary stays.
+        </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<!-- CTA: 'ENQUIRE ABOUT A STAY' linking to /contact -->
+<a class="w-full sm:w-auto inline-flex items-center justify-center bg-primary text-on-primary hover:bg-secondary px-10 py-4 text-label-lg font-label-lg uppercase tracking-wider transition-all duration-200 rounded-none shadow-sm hover:shadow-md" href="#contact">
+            ENQUIRE ABOUT A STAY
+          </a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center bg-transparent border border-primary text-primary hover:bg-primary/5 px-8 py-4 text-label-lg font-label-lg uppercase tracking-wider transition-all duration-200 rounded-none" href="#rooms">
+            EXPLORE SUITES &amp; ROOMS
+          </a>
+</div>
+<!-- Fine Hairline Guarantee & Direct Contact Note -->
+<div class="mt-12 flex flex-wrap items-center justify-center gap-6 text-label-caption font-label-caption uppercase tracking-wider text-outline">
+<span>RESPONSES WITHIN 12 HOURS</span>
+<span>•</span>
+<span>WHATSAPP CONCIERGE: +960 778-9123</span>
+<span>•</span>
+<span>DIRECT BOOKING PRIVILEGES</span>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================================================= -->
+<!-- 5. SHARED FOOTER (Strict execution of Shared Components JSON)            -->
+<!-- ========================================================================= -->
+<footer class="docked full-width bottom w-full bg-surface-container dark:bg-primary-container border-t border-outline-variant/40 dark:border-outline/20" id="contact">
+<div class="w-full px-margin-mobile md:px-margin py-space-xl md:py-space-2xl max-w-7xl mx-auto">
+<!-- Top Grid of Footer -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-outline-variant/30">
+<!-- Left Column: Wordmark & Address -->
+<div class="md:col-span-5 space-y-4">
+<span class="text-headline-md font-headline-md font-medium text-primary dark:text-inverse-primary tracking-wide block">
+            DHIGURAH HOLIDAYS
+          </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant max-w-sm leading-relaxed">
+            A boutique island guesthouse in South Ari Atoll, dedicated to mindful coastal living, authentic Maldivian hospitality, and marine conservation.
+          </p>
+<div class="pt-2 text-label-caption font-label-caption uppercase tracking-wider text-outline space-y-1">
+<p>Bahaaree Hingun, Dhigurah 00080, Maldives</p>
+<p>Telephone: +960 778-9123  |  stay@dhigurahholidays.mv</p>
+</div>
+</div>
+<!-- Middle Column: Navigation Links from JSON -->
+<!-- Links: ["Rooms", "Experiences", "Gallery", "About", "Contact", "Island Guide", "Sustainability", "Privacy Policy", "Terms of Stay"] -->
+<div class="md:col-span-4">
+<span class="text-label-caption font-label-caption uppercase tracking-wider text-primary dark:text-inverse-primary font-semibold block mb-4">
+            PORTFOLIO &amp; DIRECTORY
+          </span>
+<div class="grid grid-cols-2 gap-y-2.5 gap-x-4">
+<a class="text-on-surface-variant dark:text-outline-variant text-body-sm font-body-sm hover:text-primary dark:hover:text-inverse-primary underline underline-offset-4 decoration-outline-variant transition-all duration-200" href="#rooms">Rooms</a>
+<a class="text-on-surface-variant dark:text-outline-variant text-body-sm font-body-sm hover:text-primary dark:hover:text-inverse-primary underline underline-offset-4 decoration-outline-variant transition-all duration-200" href="#experiences">Experiences</a>
+<!-- Active link in footer: Gallery -->
+<a class="text-primary dark:text-inverse-primary font-medium text-body-sm font-body-sm hover:text-primary dark:hover:text-inverse-primary underline underline-offset-4 decoration-outline-variant transition-all duration-200" href="#gallery">Gallery</a>
+<a class="text-on-surface-variant dark:text-outline-variant text-body-sm font-body-sm hover:text-primary dark:hover:text-inverse-primary underline underline-offset-4 decoration-outline-variant transition-all duration-200" href="#about">About</a>
+<a class="text-on-surface-variant dark:text-outline-variant text-body-sm font-body-sm hover:text-primary dark:hover:text-inverse-primary underline underline-offset-4 decoration-outline-variant transition-all duration-200" href="#contact">Contact</a>
+<a class="text-on-surface-variant dark:text-outline-variant text-body-sm font-body-sm hover:text-primary dark:hover:text-inverse-primary underline underline-offset-4 decoration-outline-variant transition-all duration-200" href="#guide">Island Guide</a>
+<a class="text-on-surface-variant dark:text-outline-variant text-body-sm font-body-sm hover:text-primary dark:hover:text-inverse-primary underline underline-offset-4 decoration-outline-variant transition-all duration-200" href="#sustainability">Sustainability</a>
+<a class="text-on-surface-variant dark:text-outline-variant text-body-sm font-body-sm hover:text-primary dark:hover:text-inverse-primary underline underline-offset-4 decoration-outline-variant transition-all duration-200" href="#privacy">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-outline-variant text-body-sm font-body-sm hover:text-primary dark:hover:text-inverse-primary underline underline-offset-4 decoration-outline-variant transition-all duration-200" href="#terms">Terms of Stay</a>
+</div>
+</div>
+<!-- Right Column: Editorial Newsletter Note -->
+<div class="md:col-span-3 space-y-3">
+<span class="text-label-caption font-label-caption uppercase tracking-wider text-primary dark:text-inverse-primary font-semibold block">
+            ATOLL DISPATCHES
+          </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant">
+            Quarterly seasonal tide tables, marine migration notices, and retreat chronicles.
+          </p>
+<div class="flex items-center border-b border-primary dark:border-inverse-primary pt-2">
+<input class="bg-transparent border-none text-body-sm font-body-sm py-2 px-0 focus:ring-0 placeholder:text-outline text-primary dark:text-inverse-primary w-full" placeholder="Your email address" type="email"/>
+<button class="text-label-md font-label-md uppercase tracking-wider text-primary dark:text-inverse-primary hover:opacity-80 py-2">
+              JOIN
+            </button>
+</div>
+</div>
+</div>
+<!-- Bottom Bar: Copyright Text from JSON -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-label-caption font-label-caption uppercase tracking-wider text-outline gap-4">
+<span>© 2025 Dhigurah Holidays, South Ari Atoll, Maldives. All rights reserved.</span>
+<span>DESIGNED AS AN EDITORIAL MONOGRAPH</span>
+</div>
+</div>
+</footer>
+<!-- ========================================================================= -->
+<!-- INLINE MICRO-INTERACTION LOGIC (Filtering & Lightbox Mock)                -->
+<!-- ========================================================================= -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+
+          // Style active button
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary', 'border-primary');
+            b.classList.add('bg-surface-container-low', 'text-on-surface-variant', 'border-outline-variant/40');
+          });
+          btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant', 'border-outline-variant/40');
+          btn.classList.add('bg-primary', 'text-on-primary', 'border-primary');
+
+          // Animate and filter cards
+          galleryItems.forEach(item => {
+            const category = item.getAttribute('data-category');
+            if (filter === 'all' || category === filter) {
+              item.style.display = '';
+              item.style.opacity = '0';
+              setTimeout(() => {
+                item.style.transition = 'opacity 0.4s ease';
+                item.style.opacity = '1';
+              }, 50);
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Load more simulated alert for editorial feel
+      const loadMoreBtn = document.getElementById('load-more-btn');
+      if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', () => {
+          loadMoreBtn.innerHTML = '<span>ALL CURATED ARCHIVE PLATES LOADED</span>';
+          loadMoreBtn.classList.add('pointer-events-none', 'opacity-60');
+        });
+      }
+    });
+  </script>
+</body></html>
